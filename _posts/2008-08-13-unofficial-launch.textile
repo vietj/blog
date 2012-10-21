@@ -1,0 +1,18 @@
+---
+layout: post
+title: Unofficial launch
+permalink: /2008/08/13/unofficial-launch/index.html
+post_id: 5
+categories: 
+- Uncategorized
+---
+
+This is the unofficial launch of my blog.
+
+My <a href="http://www.julienviet.com">home page</a> went alive a few days ago and after that I've managed to install wordpress and customize it for my needs. Well almost, I still need to add the syntax highlighter plugin and do a couple of other things.
+
+Working on my home page and the blog was a rich experience, actually I never really managed to do so called client side mashups and now I understand better what it is about. Thanks to javascript and JSON, I've been able to integrate Twitter and my blog feed into my home page without requiring any server side code. I did it that way for the sake of simplicity in term of development, as I've been able to work directly on the page without the need of any server. There's a trade off though, doing that kind of mashup is not an easy task and requires considerable skills.
+
+I still have a few things to tune in order to officially launch the blog/site and drink Champagne. For instance I may consider to change the default theme of the blog although it is quite nice, it obviously has a taste of déjà vu. Actually I am considering to pay someone to create a custom theme, but I would need to find the right person first.
+
+I hope to open next Monday, see you next week!

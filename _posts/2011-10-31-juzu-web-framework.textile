@@ -1,0 +1,21 @@
+---
+layout: post
+title: Juzu Web Framework
+permalink: /2011/10/31/juzu-web-framework/index.html
+post_id: 258
+categories: 
+- GateIn
+- Java
+- OSS
+- Portlet
+---
+
+*<a href="https://github.com/juzu/juzu">Juzu</a>* is an open source web framework I started to work on recently, for several reasons, the most important one is that there is no decent framework for developing portlet application in a _simple_ *and* _productive_ manner. There are other good and valid reasons.
+
+*<a href="https://github.com/juzu/juzu">Juzu</a>* deploys on the GateIn Portal and on the Liferay Portal. Perhaps it also deploys on other portals, there aren't any good reason why Juzu would not work on other portal (except bugs).
+
+*<a href="https://github.com/juzu/juzu">Juzu</a>* integrates with dependency injection frameworks such as <a href="http://www.google.fr/url?sa=t&rct=j&q=jboss%20weld&source=web&cd=1&ved=0CCAQFjAA&url=http%3A%2F%2Fseamframework.org%2FWeld&ei=IciuTvmQJsaAOrCIrNMP&usg=AFQjCNEQoFkEjcTyI6SqdVfeGyzU45hBcw">Weld</a> (CDI) and <a href="http://www.springsource.org/">Spring</a>, theoretically it should work with any injection framework providing a good support of the <a href="http://jcp.org/en/jsr/detail?id=330">JSR-330</a> specification (however it requires some custom integration work, as JSR-330 is really lightweight...)
+
+*<a href="https://github.com/juzu/juzu">Juzu</a>* is a _work in progress_, however it is advanced enough to deliver the infamous Booking application.
+
+If you are interested in <a href="https://github.com/juzu/juzu">Juzu</a> (using or helping), you can start to read this <a href="https://github.com/juzu/juzu/blob/master/README.md">page</a>.

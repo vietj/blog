@@ -1,0 +1,36 @@
+---
+layout: post
+title: JSON to Java with JDK6
+permalink: /2011/12/26/json-to-java-with-jdk6/index.html
+post_id: 277
+categories: 
+- Java
+---
+
+There are multiple frameworks for transforming a JSON expression to a Java object tree, but the Java Platform does not come out of the box with some @javax.json@ package (I heard there are plans for that).
+
+Today I will show that you can easily transform a JSON expression to a simple Java object tree (map, arrays, primitive wrappers and string) with Java 6 and no additional framework.
+
+Obviously, it may not be the best way to proceed, specially when it comes to speed, security or java mapping. However this solution is appropriate if those are not a concern and you don't want to add a dependency to an external library for parsing JSON expressions.
+
+The solution relies on the @javax.script@ package and its Javascript binding. Indeed what's best than Javascript to parse JavaScript Object Notation ?
+
+The scripting API provides evaluation of any Javascript which is nice, unfortunately native Javascript objects are not usable from Java, but the magic of Javascript will come to the rescue!
+
+Javascript is a dynamic language which allows to modify its meta object protocol (MOP) to add new functions on native Javascript objects, through the concept of prototypes. We can modify each of the base Javascript type's prototypes to add a @toJava@ function that will return a Java version of the object:
+
+<script src="https://gist.github.com/1521692.js?file=json2java.js"></script>
+
+Now you probably get the idea, each @toJava@ function returns the Java counterpart of the Javascript object. Initially I wanted to iterate the object tree, but extending the types thanks to the prototype is a much better solution.
+
+We also need to add the missing Java part that loads this JS and uses it to create our Java objects. This is trivial to do thanks to the scripting API, here is how to load the Javascript and setup the engine:
+
+<script src="https://gist.github.com/1521692.js?file=setup"></script>
+
+Now we need to use the engine to convert JSON expressions:
+
+<script src="https://gist.github.com/1521692.js?file=parse"></script>
+
+Here there is a little trick: you can remark the usage of @AtomicReference@ and it may look inappropriate since we are not dealing with concurrent programming. The trick is that if we return a @String@ from the engine to Java, the engine will wrap it as a Javascript string and we want to avoid that. The @AtomicReference@ makes the value opaque to Javascript and the Java code will unwrap it.
+
+Those three pieces together makes a lightweight solution to transform JSON expressions to Java objects. There are certainly corner case not handled in this code, but it's a solid basis to start with, I saved the code in a GitHub gist <a href="https://gist.github.com/1521692">there</a>.

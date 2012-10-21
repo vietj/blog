@@ -1,0 +1,12 @@
+---
+layout: post
+title: The future is so bright...
+permalink: /2008/09/05/the-future-is-so-bright/index.html
+post_id: 41
+categories: 
+- Uncategorized
+---
+
+...that I almost need my shades.
+
+eXo Platform SAS <a href="http://blog.exoplatform.org/2008/09/05/arrival-of-julien-viet-at-exo-as-portal-product-manager/">announced</a> officially today that I am now part of the <a href="http://wiki.exoplatform.com/xwiki/bin/view/Main/Team">eXo Platform crew</a> as Portal Product Manager.

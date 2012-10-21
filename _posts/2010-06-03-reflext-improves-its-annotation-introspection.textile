@@ -1,0 +1,18 @@
+---
+layout: post
+title: Reflext improves its annotation introspection
+permalink: /2010/06/03/reflext-improves-its-annotation-introspection/index.html
+post_id: 192
+categories: 
+- Java
+- OSS
+---
+
+So far the annotation API in Reflext was using the runtime API to provide annotation access. What I call the runtime API is what most of developers are used to when dealing with annotations.
+
+When using the java.lang.reflect runtime, this works perfectly as the runtime provides obviously runtime annotation. Nothing special here. However at compile time, this runtime access is emulated by the compiler. The real API to access an annotation is the java.lang.model.element.AnnotationMirror interface that is a totally detyped access to an annotation. But the APT tries to be nice and provides an emulation of runtime annotation that works well until
+<ul>
+	<li>the introspected annotation is being compiled and it is not yet available under its class form</li>
+	<li>the annotation is already compiled (coming likely from JDK or a dependency) but it has a Class parameter and that class is being compiled. In that situation the Class object is not yet available, consequently it fails.</li>
+</ul>
+For that matter there is now in Reflext an <a href="http://reflext.googlecode.com/svn/trunk/api/src/main/java/org/reflext/api/annotation/">API</a> that provides a detyped access to an annotation that works equally with runtime and compile time implementations (runtime annotation access is still possible of course) .Using such API is obviously less intuitive than using the annotation directly but when you don't have the guarantee that you are the annotation type is already compiled it's the only way to go.

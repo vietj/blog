@@ -1,0 +1,20 @@
+---
+layout: post
+title: Syntax highlight support
+permalink: /2008/08/14/syntax-highlight-support/index.html
+post_id: 9
+categories: 
+- Uncategorized
+---
+
+I've just added support for the syntax highlight using the very good project <a href="http://code.google.com/p/syntaxhighlighter/">SyntaxHighlighter</a>.
+
+I used the WordPress plugin <a href="http://wordpress.org/extend/plugins/google-syntax-highlighter/">Google Syntax Highlighter for WordPress</a> but not without pain.
+
+Indeed there is a CSS conflict between SyntaxHighlighter and Wordpress at the list level that makes the highlighted code to be displayed with additional margins. If you want to see what I mean, download the plugin for WordPress and look at the screenshot. The plugin on my blog is fixed.
+
+So now the fix: modify the file @Styles/SyntaxHighlighter.css@ in the plugin (which originally comes from the SyntaxHighlighter project). Add the following at the bottom:
+<pre class="css">html > body .entry div.dp-highlighter li
+{
+	margin:0px 0pt 0px 0px;
+}</pre>

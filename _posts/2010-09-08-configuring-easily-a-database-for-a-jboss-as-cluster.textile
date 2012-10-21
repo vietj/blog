@@ -1,0 +1,27 @@
+---
+layout: post
+title: Configuring easily a database for a JBoss AS cluster
+permalink: /2010/09/08/configuring-easily-a-database-for-a-jboss-as-cluster/index.html
+post_id: 205
+categories: 
+- Java
+---
+
+In GateIn project we sometime have to deal with the setup of a JBoss cluster. While JBoss clustering is quite easy to configure there are things you need to configure such as a shared database. In addition when doing tests you need to start from a fresh database. I will give you a tip I'm using when I'm setting up a GateIn cluster that can help you to save time for setting up a database.
+
+By default GateIn uses the famous embedded database HSQLDB and it is very convenient because
+<ol>
+	<li>Deployed with GateIn, no need for extra setup</li>
+	<li>Sufficient for doing development</li>
+	<li>Fast</li>
+	<li>Easy to erase the database and start from fresh</li>
+</ol>
+<div>When dealing with a GateIn cluster (or any other application that requires a database), ultimately you need a database that will be used by the cluster nodes. Does it mean I have to give up HSQLSDB? the answer is no with an extra configuration step.</div>
+<div>By default HSQLDB comes as an in process database, but it is possible to use other configuration modes</div>
+<div>
+<ol>
+	<li>Make the database open a port to accept remote connection</li>
+	<li>Connect to a remote database</li>
+</ol>
+<div>We can use those two setup an asymmetric configuration of two nodes. The first node <a href="http://cooper.free.fr/ports-01-ds.xml">datasource</a> owns the database and the second node <a href="http://cooper.free.fr/ports-01-ds.xml">datasource</a> uses the database setup by the first node remotely.</div>
+</div>

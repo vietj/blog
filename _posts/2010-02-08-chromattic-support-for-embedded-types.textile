@@ -1,0 +1,57 @@
+---
+layout: post
+title: Chromattic support for embedded types
+permalink: /2010/02/08/chromattic-support-for-embedded-types/index.html
+post_id: 176
+categories: 
+- GateIn
+- Java
+---
+
+The embbeded type support for Chromattic brings much power to object modeling on top of Java Content Repository that allows to fully take advantage of how JCR models node types. JCR type model provides two features that don't match the Java type mode.
+
+The first feature is multiple inheritance that is supported natively by JCR which allows a type to extend several super types. The other feature is the mixin support which is pretty much similar to multiple inheritance except that it can be dynamic, meaning that a node can be assigned with a mixin type. Conversely a mixin type can be removed from a node.
+
+Both features are difficult with classic Java inheritance and the most appropriate way for modeling those is to leverage *object delegation*. Actually often object delegation is preferable over inheritance as it decouples the object types and provides support for dynamicity.
+
+h2. Mixin type support
+
+
+
+The following example is taken from GateIn and it shows how several java type can support templatization with the embedded support.
+
+The Templatized class is a delegate object that provides a relationship to a Template type.
+<pre name="code" class="java">@MixinType(name="templatized")
+public abstract class Templatized {
+
+  @OneToMany(type=RelationshipType.PATH)
+  @MappedBy("template")
+  public abstract Template getTemplate();
+  public abstract void setTemplate(Template template);
+
+}</pre>
+The Page class has an embedded relationship with a Templatized type.
+<pre name="code" class="java">@PrimaryType(name="page")
+public abstract class Page {
+
+  // Returns null if the mixin is not present
+  @OneToOne(type=RelationshipType.EMBEDDED)
+  public abstract Templatized getTemplatized();
+
+  // Controls the life cycle of the mixin
+  public abstract void setTemplatized(Templatized templatized);
+}</pre>
+At runtime this would likely be used in the following manner:
+<pre name="code" class="java">Page page = session.findByPath(Page.class, "page");
+Templatized templatized = session.create(Templatized.class);
+page.setTemplatized(templatized);
+Template template = session.findByPath("template");
+templatized.setTemplate(template);</pre>
+h2. Primary type support
+
+
+Likewise Chromattic supports primary type, the only difference is that the dynamicity aspect does not occur therefore the relationship always exists between the types and it is obviously not possible to destroy it. This feature provides to my opinion a very good alternative for reusability.
+h2. Supports in GateIn
+
+
+The embedded type feature has been added for GateIn in order to allow the Model Object for Portal (MOP). Indeed the model itself does not care about certain aspects and the portal needs to be able to make the base model richer than it is. With the embedded type we have the opportunity to keep the base model simple and have GateIn add its own mixins such as security, templatization, etc... Likewise eXo WCM that is built on top of GateIn will be able to add its own mixins for the purpose of web content management.

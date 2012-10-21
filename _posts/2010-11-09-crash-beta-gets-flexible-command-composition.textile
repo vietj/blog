@@ -1,0 +1,35 @@
+---
+layout: post
+title: CRaSH beta gets flexible command composition
+permalink: /2010/11/09/crash-beta-gets-flexible-command-composition/index.html
+post_id: 214
+categories: 
+- Uncategorized
+---
+
+<a href="http://crsh.googlecode.com/files/crsh-1.0.0-beta15.tar.gz">CRaSH 1.0.0-beta15</a> is just fresh out of the mill and gets an important new feature inspired from shell pipes.
+
+We have added the capability to compose commands through the pipe (|) and the distribution (+) operators (if you find a more appropriate name, don't hesitate to tell me).
+
+I won't detail the whole thing but instead give a few explanations, the whole thing is described in the <a href="http://crsh.googlecode.com/svn/doc/1.0.0-beta15/html/index.html#d0e105">documentation</a>.
+
+Each command is able to consume and produce a stream of node and this capability is described by a Java generic like notation : <C,P> with <C> for consumed and <P> for produced. By default a command that does not specify anything is considered as <Void,Void>, i.e it does not consume and produce anything.
+
+The pipe operator (|) allows to take the stream produced by a command and pipe it to a command that will consume it (<Void, X> | <X, Void>).
+
+The distribution operator (+) is useful with the pipe operator and it allows to distribute a stream to two commands (<Void, X> | <X, Void> + <X, Void>) or to take the output stream of two commands and combine it in a single output stream (<Void, X> + <Void, X> | <X, Void>).
+
+So after the nice theory, let's see a few examples:
+
+<pre name="code">
+// delete all nt:file nodes
+select * from nt:file | rm
+
+// add the read permission to anyone on all nt:file or nt:resource nodes
+select * from nt:file + select * from nt:resource | setperm -i any -a read
+
+// change the mime type and encoding of all nt:resource nodes
+select * from nt:resource | set jcr:mimeType text/html + set jcr:encoding UTF-8
+</pre>
+
+In addition of this very nice feature, the war file packaging has been reworked to include less jar than before, those that were already bundled by the server runtime.

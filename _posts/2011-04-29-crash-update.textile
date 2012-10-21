@@ -1,0 +1,44 @@
+---
+layout: post
+title: CRaSH update
+permalink: /2011/04/29/crash-update/index.html
+post_id: 230
+categories: 
+- Uncategorized
+---
+
+A long time since I haven't blogged and released a CRaSH version (beta15), here are the the new stuff in CRaSH since the beta15 release.
+
+First and foremost, the beta 20 was just released, so <a href="http://code.google.com/p/crsh/downloads/detail?name=crsh-1.0.0-beta20.tar.gz">grab it</a>, it's very hot! 
+
+One of the most important feature is a new set of annotations for writing commands, that provides *contextual completion*! I think it was one of the most awaited CRaSH feature and now it is there, allowing for instance JCR path auto completion, but it works also based on the context and is able to provide completion for various part of the command line
+<ul>
+	<li>command: "sy" -> "system"</li>
+	<li>option names: "--fo" -> "--force"</li>
+	<li>enumerated values: "deb" -> "debug"</li>
+	<li>custom handlers, for instance JCR path: "/fo" -> "/foo"</li>
+</ul>
+
+*Sub command* is another neat new feature that allows to group several commands inside the same class, inspired from git:
+<ul>
+	<li>log ls: list all loggers</li>
+	<li>log send: send a message to a logger</li>
+	<li>etc...</li>
+</ul>
+
+Here is an overview of how now CRaSh commands are written
+<script src="https://gist.github.com/948608.js?file=gistfile1.groovy"></script>
+
+New documentation system to provide *usage* and *man* for a command, further more now the command reference is included in the documentation
+
+<div><a href="http://blog.julienviet.com/wp-content/uploads/2011/04/screen-shot-2011-04-29-at-62903-pm1.png"><img class="aligncenter size-full wp-image-234" title="Man" src="http://blog.julienviet.com/wp-content/uploads/2011/04/screen-shot-2011-04-29-at-62903-pm1.png" alt="" width="500" height="170" /></a></div>
+
+A few new based commands were added
+
+<ul>
+	<li>log: hot configure or send message to the logging system</li>
+	<li>jdbc: an out of the box SQL console for JNDI based datasources</li>
+	<li>system: interact with the VM properties</li>
+</ul>
+
+Finally we relocated <a href="https://github.com/vietj/crash">CRaSH code on GitHub</a>, the project page remains for now on Google Code along with the hosted documentation and downloads. It will allow to better follow the project status and contribute.

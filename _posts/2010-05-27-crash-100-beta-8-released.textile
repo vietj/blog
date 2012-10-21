@@ -1,0 +1,33 @@
+---
+layout: post
+title: CRaSH 1.0.0 Beta 8 released
+permalink: /2010/05/27/crash-100-beta-8-released/index.html
+post_id: 188
+categories: 
+- GateIn
+- Java
+- OSS
+---
+
+We have just released <a href="http://code.google.com/p/crsh/downloads/list">CRaSH 1.0.0 Beta 8</a> on Google Code forge, in that release we have worked on two usability aspects of the shell:
+<ul>
+	<li>The capability for a command to prompt a value with or without echo of the value entered by the user. It is mainly used by the connect command to prompt the password when it is not entered via the -p option.</li>
+	<li>The second feature is the up/down arrow associated to recalling previously entered commands.</li>
+</ul>
+<div>The prompt command implementation required a refactor of the CRaSH architecture, the main challenge coming from the following facts:</div>
+<div>
+<ul>
+	<li>the shell is invoked by a term and the term has blocking IO</li>
+	<li>the execution of a command needs to be interruptible</li>
+</ul>
+<div>The refactoring was quite fun to do, and lead to a few improvements in the architecture that consisted mostly in decoupling the various systems, now we can distinguish:</div>
+<div>
+<ol>
+	<li>The Shell that executes the commands and returns a result. The current implementation is connected to JCR to execute Groovy commands.</li>
+	<li>The Shell Connector, a state machine executing commands in a synchronous or asynchronous manner, it depends on its configuration. The execution of a command can be cancelled.</li>
+	<li>The Term: a state machine that translates IO into actions, managing also the command history.</li>
+	<li>The TermIO: the input/output of the Term, that is implemented using <a href="http://mina.apache.org/sshd/">Apache SSHD</a> and <a href="http://code.google.com/p/telnetd-x/">Wimpi TelnetD</a></li>
+</ol>
+<div>At the moment I am quite satisfied by the current features. I think it is still missing the command completion and I don't have a clue if it is easy or complex to do and which system should manage it, I'll leave it for later fun. Maybe it will be easy to do, or it could require some new important refactor to make it possible to happen, who knows?</div>
+</div>
+</div>

@@ -1,0 +1,72 @@
+---
+layout: post
+title: Advanced Java reflection framework needs a (good enough) name
+permalink: /2009/07/17/advanced-java-reflection-framework-needs-a-good-enough-name/index.html
+post_id: 119
+categories: 
+- Java
+---
+
+I have been working during the past few days on a reflection framework for Java. Beside the complexity of the actual reflection layer, the developer is pretty much left to himself to perform advanced operations such as type variable resolution or annotation discovery based on the type inheritance hierarchy.
+
+Furthermore this reflection framework is implemented with the runtime java reflection API (java.lang.reflect.Type and its implementations) and the compile time java reflection API (javax.lang.model.type.*). It means you can perform compile time reflection or runtime reflection with the same code. I forgot to mention that the java compile time API is awful.
+
+The first reason I wrote this framework was to perform type variable resolution based on a specific class. I needed to perform such operations for a new project (that I will announce soon, stay tuned).
+
+Let me give you an example:
+<pre name="code" class="java">public class A<V> {
+
+  private final V value;
+
+  public A(V value) {
+    this.value = value;
+  }
+
+  public V getValue() {
+    return value;
+  }
+
+public class B extends A<String> {
+  public B(String value) {
+    super(value);
+  }
+}</pre>
+Now if we want to know what is the value of the type variable V at runtime for the class B, the code to perform the resolution is pretty tricky to write and requires a fairly good knowledge of the java type system, although it's a very intuitive operation to do. Let me give you another example:
+<pre name="code" class="java">public class Event<S> {
+
+  private S source;
+
+  public Event(S source) {
+    this.source = source;
+  }
+
+  public S getSource() {
+    return source;
+  }
+
+}
+public interface Listener<S> {
+
+  void onEvent(Event<S> event);
+}
+
+public class FooListener implements Listener<String> {
+  void onEvent(Event<String> event);
+}</pre>
+Although we all know that Java type erasure will not give us the type of S at runtime from instances of the Event class, any implementation of the Listener interface will carry the information about the type variable. Note that it may not be possible to resolve it if the subclass does not bind the variable to a type. It is therefore possible for the framework broadcasting events to know if a listener is able to receive events from a particular source.
+
+Since Java 6 it becomes very easy to process source code at compile time (as exhibited by Gavin King during his researches about the type safe criteria API for JPA). For instance it would be possible to replace the need for CGLib at runtime by a library that would perform a similar work at compile time (actually I wrote pretty much that in the forthcoming project). The advanced Java reflection framework helps to hide the java compile time reflection API. The compile time API is source code oriented but does expose the same semantics as the runtime API.
+
+Another neat feature is the resolution of annotations along a type hierarchy which is very useful if you want to determine the annotation of a type or a method taking in account the type hierarchy. Very useful in the following situation
+<pre name="code" class="java">@Foo
+public interface A {
+  @Bar void m();
+}
+
+public class B implements A {
+  public void m() {
+  }
+}</pre>
+Finally the framework has some nice stuff coming in, such as the inclusion of the visitor pattern that allows you to perform an operation along the hierarchy of a type, the obtention of the raw class type of any type which attempts to unify the raw type of a parameterized type and the elimination of the synthetic methods due to the return type covariance.
+
+I plan to host that reflection framework project soon somewhere (under LGPL) because I think it will be useful to anyone performing advanced operations with the Java reflection. What is missing for now is a decent name for the project since I haven't been able to come up with something nice. If you have a good suggestion, don't hesitate to send me an email (go on www.julienviet.com for the @).

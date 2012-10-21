@@ -1,0 +1,16 @@
+---
+layout: post
+title: CRaSH 1.0 CR1
+permalink: /2012/04/04/crash-1_0-cr-1/index.html
+post_id: 286
+categories: 
+- Hacking
+- Java
+---
+
+After a bit more than two years of development CRaSH is about to reach the 1.0 status, the candidate release 1 was just released with a few achievements:
+<ul>
+	<li>The CRaSH <a href="http://vietj.github.com/crash/">website</a> was launched a few days ago to give a better face to the project</li>
+	<li>Many improvements were done to finish the work (standalone & attach mode, jackrabbit support, etc...)</li>
+</ul>
+<div>Last but not least I will give a <a href="http://www.devoxx.com/display/FR12/CRaSH+un+shell+pour+etendre+la+plateforme+Java">quickie</a> at Devoxx France on CRaSH to show what CRaSH is able to do and what it can do for you.</div>

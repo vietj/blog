@@ -1,0 +1,15 @@
+---
+layout: post
+title: Aptvir the Java Compiler virus
+permalink: /2010/10/04/aptvir-the-java-compiler-virus/index.html
+post_id: 208
+categories: 
+- Hacking
+- Java
+---
+
+I've been using Annotation Processing Tools (APT) for a few months now, and I like it. It opens new capabilities for the Java platform, I exploited them to create an APT virus, called APTVir.
+
+APTVir is a single class and a single file that replicate when it is available on the classpath n the compiled code. It relies on APT to execute itself and copy itself in the output produced by the compiler.
+
+Instead of long explanations, I created a <a href="http://www.youtube.com/watch?v=JPlX8zneFuw">screencast</a> that explains it :-) and the code is available as a GitHub <a href="http://github.com/vietj/aptvir">repository</a>.

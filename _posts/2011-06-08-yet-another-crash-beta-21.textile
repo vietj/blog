@@ -1,0 +1,19 @@
+---
+layout: post
+title: Yet another CRaSH beta (21)
+permalink: /2011/06/08/yet-another-crash-beta-21/index.html
+post_id: 243
+categories: 
+- GateIn
+- Hacking
+- Java
+- OSS
+---
+
+Nothing fancy, in it, mostly bug fixes (in particular for SCP <a href="https://jira.exoplatform.org/browse/CRASH-23">CRASH-23</a> and <a href="https://jira.exoplatform.org/browse/CRASH-24">CRASH-24</a>).
+
+I updated also the Google Code page to add links to GitHub where the project is now hosted and the online docs now have the <a href="http://crsh.googlecode.com/svn/doc/pdf.html">PDF</a> and the <a href="http://crsh.googlecode.com/svn/doc/javadoc.html">Javadoc</a>.
+
+Finally the project CI is now Jenkins hosted by my friends at <a href="https://vietj.ci.cloudbees.com/job/CRaSH/">Cloudbees</a>. A special thanks to <a href="http://blog.aheritier.net/">Arnaud</a> for helping me setting this up.
+
+The <a href="http://code.google.com/p/crsh/downloads/detail?name=crsh-1.0.0-beta21.tar.gz&can=2&q=">release</a> is available on Google Code as usual.

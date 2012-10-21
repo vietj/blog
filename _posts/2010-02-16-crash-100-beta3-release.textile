@@ -1,0 +1,15 @@
+---
+layout: post
+title: CRaSH 1.0.0-beta3 release
+permalink: /2010/02/16/crash-100-beta3-release/index.html
+post_id: 185
+categories: 
+- GateIn
+- Java
+---
+
+Just released the 1.0.0-beta3 release of CRaSH, you can get it <a href="http://code.google.com/p/crsh/downloads/detail?name=crsh-1.0.0-beta3.tar.gz&can=2&q=#makechanges">there</a>.
+
+The first and foremost new features in that release are contributed by <a href="http://twitter.com/plamarque">Patrice Lamarque</a> that gave us very important commands such as cp to copy a JCR node, mv to move a JCR node and xpath to perform an xpath query in a similar way you can perform a SQL query.
+
+Beside that, the pwd command was bugged in beta2 and is fixed in beta3.

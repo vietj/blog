@@ -1,0 +1,37 @@
+---
+layout: post
+title: Uploading a file on Cloudreader iPad application from shell
+permalink: /2010/11/22/uploading-a-file-on-cloudreader-ipad-application-from-shell/index.html
+post_id: 218
+categories: 
+- Uncategorized
+---
+
+I've discovered the great <a href="http://itunes.apple.com/fr/app/cloudreaders-pdf-cbz-cbr/id363484920?mt=8">Cloudreader</a> application for iPad. Since I don't have my books on the same computer than synchronize with my iPad, I've been using Cloudreader builtin capabilities for uploading my books. Unfortunately the web interface is rather poor and each file needs to be added separately.
+
+So I went to write a shell script based on the curl command to perform a bulk upload to the Cloudreader server and I wanted to share it with other, here is the script:
+<pre class="java">#!/bin/bash
+
+# usage
+if [ $# -lt 2 ]
+then
+  echo "Usage: $0 server_adress file1 ... fileN"
+  exit 1
+fi
+
+# Save server and shift
+UPLOAD_SERVER=$1
+shift;
+
+# Upload each file
+while (( "$#" ))
+do
+if [ ! -f "$1" ]
+then
+  echo "The file $1 does not exist"
+  exit 1
+fi
+echo "Uploading $1 on $UPLOAD_SERVER"
+curl --form datafile=@"$1" --form title= --form author= http://$UPLOAD_SERVER/post >/dev/null
+shift
+done</pre>

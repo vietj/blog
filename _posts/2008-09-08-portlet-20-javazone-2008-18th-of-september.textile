@@ -1,0 +1,14 @@
+---
+layout: post
+title: Portlet 2.0 @ JavaZone 2008 18th of September
+permalink: /2008/09/08/portlet-20-javazone-2008-18th-of-september/index.html
+post_id: 47
+categories: 
+- Java
+- Portal
+- Portlet
+---
+
+I will be speaking next week at <a href="http://www.javazone.no/">JavaZone 2008</a> about Portlet 2.0 aka JSR 286. The talk title is “What’s new and cool in Portlet 2.0″ and it’s about the new features in the JSR 286 specification. I’ll introduce the new key features of the spec with demonstrations.
+
+My session is on Thursday 18th of September 2008 at 3:45 pm. You can find more information on that <a href="http://javazone.no/incogito/session/What%27s+new+and+cool+in+Portlet+2.0.html">page</a>. I’ll be there during the full event so if you want to meet and have a drink, it will be with great pleasure.

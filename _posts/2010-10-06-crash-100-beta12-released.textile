@@ -1,0 +1,15 @@
+---
+layout: post
+title: CRaSH 1.0.0-beta12 released
+permalink: /2010/10/06/crash-100-beta12-released/index.html
+post_id: 212
+categories: 
+- GateIn
+---
+
+We just release the <a href="http://crsh.googlecode.com/files/crsh-1.0.0-beta12.tar.gz">1.0.0-beta12</a> of CRaSH that add two new commands:
+<ol>
+	<li>The addnode command adds one or several JCR nodes</li>
+	<li>The setperm command provides security configuration of JCR nodes</li>
+</ol>
+<div>The rm command has also be improved and provides the capability to remove several nodes at the same time.</div>

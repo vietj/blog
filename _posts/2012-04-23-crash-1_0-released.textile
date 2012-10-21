@@ -1,0 +1,53 @@
+---
+layout: post
+title: CRaSH 1.0 released
+permalink: /2012/04/23/crash-1_0-released/index.html
+post_id: 294
+categories: 
+- GateIn
+- Java
+- OSS
+---
+
+p. After two years of development, I'm proud to release <a href="http://vietj.github.com/crash/">CRaSH</a> 1.0:
+
+
+
+p. CRaSH started as an experiment during my Christmas vacations late 2009 and evolved to become the extensible shell for the Java Virtual Machine offering many exclusive features like:
+
+
+<ul>
+	<li>SSH and Telnet connectivity</li>
+	<li>Standalone and attach mode</li>
+	<li>Extensible with hot reloading commands</li>
+	<li>Ready to use: JVM management, JDBC access, etc...</li>
+	<li>Powerful contextual completion</li>
+	<li>Pluggable authentication</li>
+	<li>Easy to embed</li>
+	<li>Java Content Repository plugin for eXo JCR and Jackrabbit servers</li>
+</ul>
+
+p. I want to thank the people that make this possible since the inception: <a href="http://blog.aheritier.net/">Arnaud Héritier</a>, <a href="http://www.alain-defrance.com">Alain Defrance</a>, <a href="http://glaforge.free.fr/weblog/">Guillaume Laforge</a>, <a href="http://www.ehsavoie.com/">Emmanuel Hugonnet</a>, <a href="http://blog.hgomez.net/">Henri Gomez</a>, folks that helped in some kind at some point and of course my company <a href="http://www.exoplatform.com">eXo Platform</a> for letting me spend a significant amount of time at my free will on this great project.
+
+
+
+p. The release was done last Thursday during the Devoxx France conference where I had the opportunity to <a href="http://www.devoxx.com/display/FR12/CRaSH+un+shell+pour+etendre+la+plateforme+Java">present</a> CRaSH during 15 too short minutes: thank you Devoxx France for believing in CRaSH and giving me the opportunity to demonstrate the interest of the project. I'm sure that now many people will find an interest in CRaSH because it fill real and growing needs on top the JVM:
+
+
+
+<ul>
+	<li>Extend any kind project with a professional Command Line Interface</li>
+	<li>Take control of a JVM in a couple of seconds and make it transparent</li>
+</ul>
+
+p. Although 1.0 is released the project, I have plenty of crazy ideas for CRaSH's future although I don't have a formal roadmap yet (I never have actually...), so expect the project to evolve and provide even greater features.
+
+
+
+p. CRaSH is open source and minded, if you can improve CRaSH with a crazy idea, we are open to your contributed features!
+
+
+
+p. Last but not least, we have setup of group for CRaSH users, our community is growing fast: don't hesitate to <a href="http://groups.google.com/group/crash-users?hl=fr">join us</a>!
+
+

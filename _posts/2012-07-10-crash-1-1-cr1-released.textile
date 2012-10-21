@@ -1,0 +1,19 @@
+---
+layout: post
+title: CRaSH 1.1-cr1 released
+permalink: /2012/07/10/crash-1-1-cr1-released/index.html
+post_id: 325
+categories: 
+- Java
+- crash
+---
+
+We just released 1.1-cr1 with the following noticeable changes:
+<ul>
+	<li>The most _visible_ feature is the support of text styling with colors and decorations, a few commands already use it such as "thread ls" or the jdbc command, it is also quite easy to use when writing a command.</li>
+	<li>Spring embedding allows to embed CRaSH in Spring and its plugins as Spring beans. In this mode, CRaSH commands can access the Spring beans registered in the Spring bean factory allowing to extend easily Spring applications.</li>
+	<li>There is now a crash.properties file in the standalone crash configuration directory providing a default configuration.</li>
+	<li>The SSH connector is now deployed in standalone mode.</li>
+	<li>Enhanced documentation for the developer section.</li>
+</ul>
+<div>You can get the links as usual from the <a href="http://julienviet.com/crash" target="_blank">project page</a> and the release notes from the <a href="https://jira.exoplatform.org/secure/ReleaseNote.jspa?projectId=10412&version=18710" target="_blank">JIRA</a>.</div>

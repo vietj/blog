@@ -1,0 +1,21 @@
+---
+layout: post
+title: CRaSH feedback after Devoxx FR 2012
+permalink: /2012/05/18/crash-feedback-after-devoxx-fr-2012/index.html
+post_id: 305
+categories: 
+- Java
+- OSS
+- crash
+---
+
+My CRaSH quickie had a good attendance at Devoxx and it was great to see many folks interested in the project.
+<p style="text-align: center;"><a href="http://blog.julienviet.com/wp-content/uploads/2012/05/img_7831.jpeg"><img class="size-medium wp-image-306 aligncenter" title="img_7831" src="http://blog.julienviet.com/wp-content/uploads/2012/05/img_7831-300x199.jpg" alt="" width="300" height="199" /></a>
+
+
+
+<a href="http://linsolas.free.fr/wordpress/index.php/2012/04/devoxx-france-dernier-jour/">Romain</a> and <a href="http://www.duminy.fr/blog/?p=1655">Fabien</a> blogged about CRaSH and the feedback is good (although short but it was at 15mn quickie after all :-) ). The blog are written in french language though.
+
+The 1.0 release was done also during Devoxx and now the project's follower on GitHub has increased to more than <a href="https://github.com/vietj/crash/watchers">60 persons</a>.
+
+Devoxx FR 2012 was a great moment and a fantastic opportunity to evangelize CRaSH. We are now actively working on the forth coming CRaSH 1.1, stay tuned and follow the project!

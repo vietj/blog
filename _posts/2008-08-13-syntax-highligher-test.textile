@@ -1,0 +1,21 @@
+---
+layout: post
+title: Syntax highligher test
+permalink: /2008/08/13/syntax-highligher-test/index.html
+post_id: 7
+categories: 
+- Uncategorized
+---
+
+Testing syntax highlighter plugin
+<pre class="java">public class Hello
+{
+   public static main(String[] args)
+   {
+      System.out.println("Hello");
+   }
+}</pre>
+<pre class="javascript">function hello()
+{
+   alert('hello');
+}</pre>

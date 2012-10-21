@@ -1,0 +1,30 @@
+---
+layout: post
+title: Juzu 0.4.2
+permalink: /2011/12/12/juzu-042/index.html
+post_id: 260
+categories: 
+- GateIn
+- Java
+- OSS
+- Portal
+- Portlet
+---
+
+We have been working hard to get this release done with a great set of new features!!!
+
+First and foremost, I'm very proud of the level support we have now reached for Eclipse. As you may know, Juzu relies much on Annotation Processing Tools (APT) since the beginning to bring exclusive features. Making Juzu work with Eclipse incremental compiler was very challenging because APT simply works differently. Among those features, the type safe template parameters with Eclipse is showed in this screencast
+
+<div align="center"><iframe src="http://player.vimeo.com/video/33370178?title=0&byline=0&portrait=0" width="284" height="160" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen align="center"></iframe></div>
+
+The dev mode feature has been improved a lot, specially now the error reporting is more accurate and sexy, this screencast will teach you everything about switching an application to dev mode in Liferay
+
+<div align="center"><iframe src="http://player.vimeo.com/video/33519963?title=0&byline=0&portrait=0" width="284" height="160" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+
+Juzu comes as a package to download on this <a href="https://github.com/juzu/juzu/downloads">page</a>. Alternatively you can also use the maven archetype to bootstrap an application
+
+<script src="https://gist.github.com/1468864.js"> </script>
+
+Finally, the Dependency Injection has been improved in order to allow the injection of external providers, in particular this is useful if you are using Juzu in the GateIn server and you want to inject GateIn services in a Juzu application, this is now trivial to do and is explained in the <a href="https://github.com/juzu/juzu/wiki/GateInServiceInjection">wiki</a>.
+
+For the future we plan to develop new features and improve step by step the project, on top of my mind the integration with <a href="http://jcp.org/en/jsr/detail?id=303">Bean Validation</a> would be a good thing to do. If you are interested to follow the Juzu project development you can join our <a href="http://groups.google.com/group/juzu">Juzu group</a>.

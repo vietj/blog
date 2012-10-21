@@ -1,0 +1,31 @@
+---
+layout: post
+title: Juzu has Mustache!
+permalink: /2012/06/08/juzu-has-mustache/index.html
+post_id: 308
+categories: 
+- Uncategorized
+---
+
+<a href="http://juzuweb.org">Juzu</a> 0.5 will be released soon and will provide many new great features. Among them now the <a href="http://mustache.github.com/mustache.5.html">Mustache</a> templating engine is supported. Mustache is a logic-less templating engine that is language agnostic:
+
+<script src="https://gist.github.com/2893951.js?file=gistfile1.txt"></script>
+
+It was important for me to support a second templating language and Mustache is a great choice because:
+<ul>
+	<li>it demonstrate that Juzu can use different templating engine</li>
+	<li>some people wants logic-less languages and try to avoid code in templates</li>
+	<li>it provides that Juzu core is not coupled to the current templating engine</li>
+	<li>Mustache.java implementation has a good architecture and is easy to embed / integrate</li>
+	<li>Mustache is easy to use and understand</li>
+	<li>Mustache can also be used on the client side and later an application could use the same template both on the server and the client</li>
+</ul>
+
+The integration relies on <a href="https://github.com/spullara/mustache.java">Mustache.java</a>:
+<ol>
+	<li>mustaches (that's the name of a mustache file) are also in the "templates" package and ends with ".mustache"</li>
+	<li>mustache are used and declared exactly the same way than .gtmpl templates (i.e @Inject Path("index.mustache") Template</li>
+	<li>Mustache can also have type safe parameters using the pragma notion which is an extension of Mustache.java : {{%param foo}} anywhere in the template</li>
+	<li>At the moment taglibs are coupled to the native groovy template engine and cannot be used. I don't know if it's feasible to be able to integrate a tag lib with a .mustache</li>
+	<li>5/ Mustache is not embedded in Juzu core and instead is provided as an independent jar : juzu-templating-mustache . The main reason is that Mustache.java relies on the Mustache.java library but also on Google Guava. I want to keep juzu-core the less coupled to third party library.</li>
+</ol>

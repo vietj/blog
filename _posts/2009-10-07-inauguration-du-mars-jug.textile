@@ -1,0 +1,20 @@
+---
+layout: post
+title: Inauguration du Mars JUG
+permalink: /2009/10/07/inauguration-du-mars-jug/index.html
+post_id: 138
+categories: 
+- Conference
+- JUG
+- Java
+---
+
+Le Mars JUG fera son <a href="http://www.marsjug.org/evenements">inauguration</a> le jeudi 15 octobre 2009 lors de l'Agile Tour.
+
+<a href="http://www.emmanuelbernard.com/">Emmanuel Bernard</a> a accepté d'être le parrain du JUG et cela nous fait très plaisir, il sera aussi le premier conférencier du JUG et nous parlera d'Hibernate Search, un projet qui permet de faire des requetes full-texte tout en utilisant Hibernate. Il explorera entre autre comment les recherches approximatives telles que la recherche phonetique sont implementées.
+
+Les passionnés d'Agilité et de Java seront comblés car le JUG s'est associé à l'Agile Tour (participation gratuite, inscription <a href="http://www.agiletour.org/en/at2009_marseille_inscription.html">ici</a>) pour l'inauguration. Le but est de créer une synergie entre les deux évènements qui sont en général assez rare dans la région PACA. Je tiens à remercier Viaxoft et plus particulièrement Karine pour cette collaboration.
+
+<a href="http://agileee.org/schedule/DB/">Dimitri Rodolphe Baeli</a> un collègue d'eXo Platform sera lui présent mais durant l'Agile Tour pour faire un tour des pratiques TDD en entreprise.
+
+Le but du Mars JUG est de fédérer autour de Java et de créer une communauté dans notre région, j'espère que vous répondrez présent à l'appel le 15 octobre.

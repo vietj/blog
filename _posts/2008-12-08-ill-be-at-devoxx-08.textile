@@ -1,0 +1,12 @@
+---
+layout: post
+title: I'll be at Devoxx 08
+permalink: /2008/12/08/ill-be-at-devoxx-08/index.html
+post_id: 73
+categories: 
+- Conference
+---
+
+Long time no blog, just a quick note that tell you that I will be at Devoxx 08 as a <a href="http://blog.exoplatform.org/2008/12/08/exo-presence-at-devoxx-08/">representative</a> of eXo in the exhibition center.
+
+See you there!

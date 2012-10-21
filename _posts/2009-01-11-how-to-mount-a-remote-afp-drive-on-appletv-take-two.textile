@@ -1,0 +1,31 @@
+---
+layout: post
+title: How to mount a remote AFP drive on AppleTV Take Two
+permalink: /2009/01/11/how-to-mount-a-remote-afp-drive-on-appletv-take-two/index.html
+post_id: 103
+categories: 
+- Hacking
+---
+
+I suppose that you have already installed <a href="http://wiki.awkwardtv.org/wiki/NitoTV_Take_2">NitoTV</a> on your AppleTV as you need it to get remote drive access (note that it's probably possible to do without it by doing everything through SSH).
+
+The AppleTV with a native firmware above 2.0, does not have the AFP protocol in its recovery partition. So even though you upload the MacOSXUpdCombo10.4.9Intel.dmg on the AppleTV and create the recovery.dmg it will not give you access to the AFP protocol. The main reason is that the recovery.dmg image does not contain it! But if you would have an AppleTV with a 1.0 firmware it would have worked since it's still in the recovery partition (it makes sense, doesn't it) ?
+
+Someone found a solution to workaround this issue, and I think it's interesting to blog about it, since it's in a forum post on the atvflash forums (it's also like a note to myself, in case the post would disappear). So here is verbatim the solution:
+<ol>
+	<li>Do a factory restore of the ATV, update the firmware to the latest version and then run the patchstick again. You may be able to uninstall NitoTV but I couldn't get this to work after a failed smart installer attempt. A freshly hacked box seems to be the most reliable method.</li>
+	<li>On ATV: SSH in with terminal and enter @sudo dd if=/dev/disk0s2 of=recovery2.dmg bs=1m@
+This makes a recovery image of your Take 2 recovery partition.</li>
+	<li>On the Mac: sFTP into the ATV, I used an app called Fugu to do this, and download recovery2.dmg to your desktop.</li>
+	<li>On the Mac: Open recovery2.dmg. Once it's mounted you'll see a number of files in there but the one we're interested in is called "OS.dmg". Rename this to anything you want.</li>
+	<li>On the Mac: Copy in the 1.0 recovery image you have managed to obtain. Mine was called OS-dot-DMG 1.0.dmg and the md5 = 55b909196952ff72c93aaf3553cf661e</li>
+	<li> On the Mac: Rename the image file you have just copied to "OS.dmg" and then unmount recovery2.dmg. You will now have an image of your ATV's recovery partition called recovery2.dmg but the OS.dmg file contained within has been replaced with the 1.0 version.</li>
+	<li>On the Mac: sFTP into the ATV and upload the edited recovery2.dmg to the Documents folder. Then rename this file recovery.dmg</li>
+	<li>On the Mac: sFTP into the ATV and upload MacOSXUpdCombo10.4.9Intel.dmg to the Documents folder.</li>
+	<li>On ATV: With the remote navigate to the DVD/NitoTV menu and select Settings > Install Software. I then ran 'Install Perian', 'Install mPlayer Codecs' and 'Install Turbo's kextloader' in that order. This probably wasn't necessary and most of it is probably already there but worth doing just to be safe.</li>
+	<li>On ATV: Once all this is done you're ready to run smart installer.</li>
+	<li>11) Unplug the ATV, plug it back in and then you should be able to mount the box on your mac and see your shares on the ATV. I've found that streaming video from your Mac via <span class="posthilit">afp</span> in NitoTv/DVD is a bit choppy. Streaming through the "Files" menu seems much smoother.</li>
+</ol>
+The only thing I need to add is that the so called "OS-dot-DMG 1.0.dmg" is the original firmware of the AppleTV that you can obtain if you own an AppleTV Take One.
+
+The original forum post can be found <a href="http://forum.atvflash.com/viewtopic.php?f=10&t=67&start=50#p1016">here</a> and all the credits go to Scrubadub and Magic, whoever you are.

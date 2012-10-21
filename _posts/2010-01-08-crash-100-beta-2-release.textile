@@ -1,0 +1,20 @@
+---
+layout: post
+title: CRaSH 1.0.0 Beta 2 release
+permalink: /2010/01/08/crash-100-beta-2-release/index.html
+post_id: 168
+categories: 
+- GateIn
+- Java
+---
+
+The CRaSH 1.0.0 Beta 2 has been released, you can download it <a href="http://crsh.googlecode.com/files/crsh-1.0.0-beta2.tar.gz">there</a> and the <a href="http://code.google.com/p/crsh/wiki/Documentation">documentation</a> has been updated with the new features.
+
+The most important feature brought by that release is the brand new support for SSH thanks to the Apache SSHD project. SSH access is more suitable for remote access on public networks and SCP can be used to import or export content from the repository.
+
+Configuration is now possible via the web.xml file and the following can be configured:
+<ul>
+	<li>SSH username, password, port and key file</li>
+	<li>Telnet port</li>
+</ul>
+<div>Finally good work has been made on the release process by creating an archive containing the shell war file, the project sources and the javadocs.</div>

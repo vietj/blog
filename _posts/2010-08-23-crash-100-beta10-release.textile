@@ -1,0 +1,10 @@
+---
+layout: post
+title: CRaSH 1.0.0-beta10 release
+permalink: /2010/08/23/crash-100-beta10-release/index.html
+post_id: 200
+categories: 
+- Uncategorized
+---
+
+CRaSh <a href="http://crsh.googlecode.com/files/crsh-1.0.0-beta10.tar.gz">1.0.0-beta10</a> supports now line edition and cursor navigation for the telnet connector as its first contribution!

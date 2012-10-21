@@ -1,0 +1,27 @@
+---
+layout: post
+title: GateIn 3.2 M1
+permalink: /2011/06/27/gatein-32-m1/index.html
+post_id: 245
+categories: 
+- GateIn
+- Java
+- OSS
+- Portal
+- Portlet
+---
+
+We released last week the first milestone of GateIn 3.2, it was a long time since the 3.1 release and both Red Hat and eXo teams were quite busy working on the product and project side of GateIn.
+
+Among the noticeable changes, you will find now a support for Jetty 6.1/Tomcat 7/JBoss AS 6 web containers, a improved Maven build compatible with Maven 3, a few UI improvements and many bug fixes. You can read more about it <a href="http://www.dzone.com/links/gatein_32_m1_reached.html">there</a>.
+
+I'm proud now to work with Bolek that will replace Thomas Heute as GateIn technical lead. Bolek was involved in the effort since the JBoss Portal projects and earned his credits by providing an Hibernate implementation of the now dead Slide project (JCR ancestor) and implementing much of the Portlet 1 TCK assertions in our testsuite (that proved to be invaluable when JSR 286 was implemented). He blogged about his new role in the project <a href="http://community.jboss.org/en/gatein/blog/2011/06/23/new-blog-new-project-lead-and-new-release">here</a>.
+
+If you are a fan of GateIn, the <a href="http://crsh.googlecode.com/">CRaSH</a> shell is a must have companion for GateIn. CRaSH is a shell that provides a JCR access and allows to do stuff and hack GateIn. Use it at your own risks of course ;-) . Download of the latest beta-21 is <a href="http://code.google.com/p/crsh/downloads/list">here</a>.
+
+Finally it's time of a few words about GateIn <a href="https://github.com/exoplatform/gatein-stuff">stuff</a> that is another GateIn companion I started a few months ago on GitHub. It's something more informal than a real project, it's like a bunch of stuff that could be useful if you're a GateIn user, at least it's useful to me, it contains so far
+<ul>
+	<li>a <a href="https://github.com/exoplatform/gatein-stuff/tree/master/CRaSH">CRaSH</a> folder with command for adding users to GateIn</li>
+	<li style="text-align: left;"><a href="https://github.com/exoplatform/gatein-stuff/tree/master/gen">gen</a> : an XML generator for generating large navigations</li>
+	<li><a href="https://github.com/exoplatform/gatein-stuff/tree/master/sqlman">sqlman</a> : a tool based on the great JBoss Byteman project that measures the access to resources, very valuable for monitoring database activity. Note that this tool is generic and does not depend on GateIn itself. We could extract it and find a better name (containing "spy")</li>
+</ul>
