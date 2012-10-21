@@ -31,7 +31,7 @@ Here is an overview of how now CRaSh commands are written
 
 New documentation system to provide *usage* and *man* for a command, further more now the command reference is included in the documentation
 
-<div><a href="http://blog.julienviet.com/wp-content/uploads/2011/04/screen-shot-2011-04-29-at-62903-pm1.png"><img class="aligncenter size-full wp-image-234" title="Man" src="http://blog.julienviet.com/wp-content/uploads/2011/04/screen-shot-2011-04-29-at-62903-pm1.png" alt="" width="500" height="170" /></a></div>
+<div><a href="/wp-content/uploads/2011/04/screen-shot-2011-04-29-at-62903-pm1.png"><img class="aligncenter size-full wp-image-234" title="Man" src="/wp-content/uploads/2011/04/screen-shot-2011-04-29-at-62903-pm1.png" alt="" width="500" height="170" /></a></div>
 
 A few new based commands were added
 

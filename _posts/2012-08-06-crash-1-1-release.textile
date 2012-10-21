@@ -16,10 +16,10 @@ h3. Color and styles
 
 CRaSH now supports shell color and styles for increasing the readability of your commands, for example:
 
-<a href="http://blog.julienviet.com/wp-content/uploads/2012/08/crash-01.png"><img class="aligncenter size-full wp-image-343" title="crash-01" src="http://blog.julienviet.com/wp-content/uploads/2012/08/crash-01.png" alt="" width="500" height="198" /></a>
+<a href="/wp-content/uploads/2012/08/crash-01.png"><img class="aligncenter size-full wp-image-343" title="crash-01" src="/wp-content/uploads/2012/08/crash-01.png" alt="" width="500" height="198" /></a>
 
 The same command in CRaSH 1.1 with better color and formatting:
-h3. <a href="http://blog.julienviet.com/wp-content/uploads/2012/08/crash-11.png"><img class="aligncenter size-full wp-image-344" title="crash-11" src="http://blog.julienviet.com/wp-content/uploads/2012/08/crash-11.png" alt="" width="500" height="196" /></a>
+h3. <a href="/wp-content/uploads/2012/08/crash-11.png"><img class="aligncenter size-full wp-image-344" title="crash-11" src="/wp-content/uploads/2012/08/crash-11.png" alt="" width="500" height="196" /></a>
 
 
 

@@ -18,7 +18,7 @@ The answer is pretty big for me. My machine is a MacBook Pro 2ghz with 2 gigs of
 
 It is way too much for desktops. I wondered then how does it scale if I run 10 times the same application ? Perhaps that Air has a smart runtime that can collocate resources ?
 
-[caption id="attachment_32" align="aligncenter" width="300" caption="Ten Hello World Footprint"]<a href="http://blog.julienviet.com/wp-content/uploads/2008/08/tenhelloworldnnodebugfootprint.png"><img class="size-medium wp-image-32" title="tenhelloworldnnodebugfootprint" src="http://blog.julienviet.com/wp-content/uploads/2008/08/tenhelloworldnnodebugfootprint-300x89.png" alt="Ten Hello World Footprint" width="300" height="89" /></a>[/caption]
+[caption id="attachment_32" align="aligncenter" width="300" caption="Ten Hello World Footprint"]<a href="/wp-content/uploads/2008/08/tenhelloworldnnodebugfootprint.png"><img class="size-medium wp-image-32" title="tenhelloworldnnodebugfootprint" src="/wp-content/uploads/2008/08/tenhelloworldnnodebugfootprint-300x89.png" alt="Ten Hello World Footprint" width="300" height="89" /></a>[/caption]
 
 According to my results, running 10 Hello World application consumes around 200 megs of RAM and around 20% of my CPU. Clearly I see a problem here, how can the end user really uses several Air applications at the same time without consuming too much OS resources ?
 

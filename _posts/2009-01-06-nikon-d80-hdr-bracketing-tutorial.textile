@@ -11,7 +11,7 @@ Recently I dived into <a href="http://en.wikipedia.org/wiki/High_dynamic_range_i
 
 My interest for the HDR technology is the capability to produce images that would be almost impossible to take with a digital camera. An HDR image reveals details in the light and dark areas of your images.
 
-[caption id="attachment_89" align="aligncenter" width="300" caption="HDR"]<a href="http://picasaweb.google.com/julien.viet/Bastia_01_01_09#5286332709867698482"><img class="size-medium wp-image-89" title="ciel1" src="http://blog.julienviet.com/wp-content/uploads/2009/01/ciel1-300x200.jpg" alt="HDR" width="300" height="200" /></a>[/caption]
+[caption id="attachment_89" align="aligncenter" width="300" caption="HDR"]<a href="/julien.viet/Bastia_01_01_09#5286332709867698482"><img class="size-medium wp-image-89" title="ciel1" src="/wp-content/uploads/2009/01/ciel1-300x200.jpg" alt="HDR" width="300" height="200" /></a>[/caption]
 
 For instance, on this picture we can see the details in the clouds but also on the rock and it would be very hard to achieve it without HDR.
 
