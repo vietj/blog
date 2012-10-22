@@ -8,3 +8,5 @@ tagline: a technical trip
   {% assign content = post.content %}
   {% include post_detail.html %}
 </div>
+<hr>
+{% include JB/comments %}
