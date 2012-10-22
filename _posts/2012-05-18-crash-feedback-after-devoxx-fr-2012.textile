@@ -12,8 +12,6 @@ categories:
 My CRaSH quickie had a good attendance at Devoxx and it was great to see many folks interested in the project.
 <p style="text-align: center;"><a href="/wp-content/uploads/2012/05/img_7831.jpeg"><img class="size-medium wp-image-306 aligncenter" title="img_7831" src="/wp-content/uploads/2012/05/img_7831-300x199.jpg" alt="" width="300" height="199" /></a>
 
-
-
 <a href="http://linsolas.free.fr/wordpress/index.php/2012/04/devoxx-france-dernier-jour/">Romain</a> and <a href="http://www.duminy.fr/blog/?p=1655">Fabien</a> blogged about CRaSH and the feedback is good (although short but it was at 15mn quickie after all :-) ). The blog are written in french language though.
 
 The 1.0 release was done also during Devoxx and now the project's follower on GitHub has increased to more than <a href="https://github.com/vietj/crash/watchers">60 persons</a>.

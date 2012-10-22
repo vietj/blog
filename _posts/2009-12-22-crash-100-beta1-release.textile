@@ -9,8 +9,6 @@ categories:
 - Portal
 ---
 
-<div>
-
 I'm glad to announce the release of <a href="http://crsh.googlecode.com/files/crsh-1.0.0-beta1.zip">CRaSH 1.0.0-beta1</a>!!!
 
 But wait, what is CRaSH?
@@ -20,11 +18,13 @@ CRaSH is a shell for Java Content Repository that allows remote connection to a 
 As a GateIn developer I often use the underlying JCR engine and I developed CRaSH as a companion for my development tasks.
 
 The project is written in Java and Groovy and leverages a few good open source projects:
+
 <ul>
 	<li>The command system is written in Groovy allowing seamless extension of the shell by adding new commands</li>
 	<li>Netty provides the remote connection capabilities</li>
 	<li>Args4j parses the command line and inject the option and argument in the Groovy commands</li>
 </ul>
+
 It comes as a war file that setup a telnet daemon on the port 5000.
 
-The project is developed on <a href="http://crsh.googlecode.com">Google Code</a> under the LGPL license and contributions are welcome :-) !</div>
+The project is developed on <a href="http://crsh.googlecode.com">Google Code</a> under the LGPL license and contributions are welcome :-) !

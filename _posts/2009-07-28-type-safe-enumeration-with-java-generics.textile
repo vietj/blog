@@ -10,7 +10,11 @@ categories:
 I've been working with Java 5 Generics for about one year now and one pattern that emerged from my experience is the use of generics to create enumerations that provide type safety (I don't claim to be the inventor of that pattern, actually I don't even claim it is a pattern).
 
 Often type safety can be achieved by using method type variables like
-<pre class="java">public abstract <N extends Number> createNumber(Class<? extends N> numberType, String stringValue);</pre>
+
+{% highlight java %}public abstract <N extends Number> createNumber(
+	Class<? extends N> numberType,
+	String stringValue);{% endhighlight %}
+
 The drawback of this solution is that all the classes must belong to the same hierarchy, in that example they all need to be a subclass of java.lang.Number. The most direct workaround is to free the type variable from its upper bound java.lang.Number. That makes the choice very large since any subclass of java.lang.Object can be accepted.
 
 It is also impossible to prevent some subclass to be used as type argument at compilation time. Failure would have to happen at runtime with an java.lang.IllegalArgumentException thrown for instance.
@@ -20,7 +24,8 @@ Those two limitations makes the method not easy to understand the first time you
 So I had to find a way to express an enumerated type that would be type safe. The solution I found is actually not an enumeration in the old/classic way we use to know it before Java 5 Enums (i.e it is class that has a private constructor with public static fields) and therefore it cannot be used in a switch statement. That probably is the only drawback I found but it is a more acceptable issue than the two problems I had before.
 
 Let's assume we represent a concept of simple types which are arbitrarily defined by String, Boolean and Integer with
-<pre name="code" class="java">public class SimpleType<S> {
+
+{% highlight java %}public class SimpleType<S> {
 
    public static final SimpleType<String> STRING =
       new SimpleType<String>(String.class);
@@ -36,9 +41,11 @@ Let's assume we represent a concept of simple types which are arbitrarily define
    private SimpleType(Class<S> javaType) {
       this.javaType = javaType;
    }
-}</pre>
+}{% endhighlight %}
+
 Now we can easily use it as a type safe enumeration, for instance here is how I would write a parse method:
-<pre name="code" class="java">/*
+
+{% highlight java %}/*
  * Note : yeah this is not really OO and it could be
  * possible to have an abstract parse(String s)
  * method on the SimpleType class and have the static
@@ -57,7 +64,8 @@ public <T> T parse(SimpleType<T> simpleType, String s) throws NullPointerExcepti
    if (simpleType == SimpleType.BOOLEAN)
       return Boolean.valueOf(s);
    throw new AssertionError("impossible!);
-}</pre>
+}{% endhighlight %}
+
 This way we enforce the set of types that can be passed as arguments in our method and we do it in a manner that will enforce the developer to write type safe code.
 
 Next time I'll show you have it is possible to improve the pattern efficiency and usability by adding methods on the Type Safe Enumeration class.

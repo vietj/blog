@@ -12,6 +12,7 @@ I suppose that you have already installed <a href="http://wiki.awkwardtv.org/wik
 The AppleTV with a native firmware above 2.0, does not have the AFP protocol in its recovery partition. So even though you upload the MacOSXUpdCombo10.4.9Intel.dmg on the AppleTV and create the recovery.dmg it will not give you access to the AFP protocol. The main reason is that the recovery.dmg image does not contain it! But if you would have an AppleTV with a 1.0 firmware it would have worked since it's still in the recovery partition (it makes sense, doesn't it) ?
 
 Someone found a solution to workaround this issue, and I think it's interesting to blog about it, since it's in a forum post on the atvflash forums (it's also like a note to myself, in case the post would disappear). So here is verbatim the solution:
+
 <ol>
 	<li>Do a factory restore of the ATV, update the firmware to the latest version and then run the patchstick again. You may be able to uninstall NitoTV but I couldn't get this to work after a failed smart installer attempt. A freshly hacked box seems to be the most reliable method.</li>
 	<li>On ATV: SSH in with terminal and enter @sudo dd if=/dev/disk0s2 of=recovery2.dmg bs=1m@
@@ -24,8 +25,9 @@ This makes a recovery image of your Take 2 recovery partition.</li>
 	<li>On the Mac: sFTP into the ATV and upload MacOSXUpdCombo10.4.9Intel.dmg to the Documents folder.</li>
 	<li>On ATV: With the remote navigate to the DVD/NitoTV menu and select Settings > Install Software. I then ran 'Install Perian', 'Install mPlayer Codecs' and 'Install Turbo's kextloader' in that order. This probably wasn't necessary and most of it is probably already there but worth doing just to be safe.</li>
 	<li>On ATV: Once all this is done you're ready to run smart installer.</li>
-	<li>11) Unplug the ATV, plug it back in and then you should be able to mount the box on your mac and see your shares on the ATV. I've found that streaming video from your Mac via <span class="posthilit">afp</span> in NitoTv/DVD is a bit choppy. Streaming through the "Files" menu seems much smoother.</li>
+	<li>Unplug the ATV, plug it back in and then you should be able to mount the box on your mac and see your shares on the ATV. I've found that streaming video from your Mac via <span class="posthilit">afp</span> in NitoTv/DVD is a bit choppy. Streaming through the "Files" menu seems much smoother.</li>
 </ol>
+
 The only thing I need to add is that the so called "OS-dot-DMG 1.0.dmg" is the original firmware of the AppleTV that you can obtain if you own an AppleTV Take One.
 
 The original forum post can be found <a href="http://forum.atvflash.com/viewtopic.php?f=10&t=67&start=50#p1016">here</a> and all the credits go to Scrubadub and Magic, whoever you are.

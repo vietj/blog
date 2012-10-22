@@ -17,4 +17,5 @@ Configuration is now possible via the web.xml file and the following can be conf
 	<li>SSH username, password, port and key file</li>
 	<li>Telnet port</li>
 </ul>
-<div>Finally good work has been made on the release process by creating an archive containing the shell war file, the project sources and the javadocs.</div>
+
+Finally good work has been made on the release process by creating an archive containing the shell war file, the project sources and the javadocs.

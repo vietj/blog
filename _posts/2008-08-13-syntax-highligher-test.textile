@@ -7,15 +7,17 @@ categories:
 - Uncategorized
 ---
 
-Testing syntax highlighter plugin
-<pre class="java">public class Hello
+Testing syntax highlighter plugin:
+
+{% highlight java %}public class Hello
 {
    public static main(String[] args)
    {
       System.out.println("Hello");
    }
-}</pre>
-<pre class="javascript">function hello()
+}{% endhighlight %}
+
+{% highlight java %}function hello()
 {
    alert('hello');
-}</pre>
+}{% endhighlight %}

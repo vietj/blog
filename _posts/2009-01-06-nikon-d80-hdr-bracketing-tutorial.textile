@@ -11,7 +11,7 @@ Recently I dived into <a href="http://en.wikipedia.org/wiki/High_dynamic_range_i
 
 My interest for the HDR technology is the capability to produce images that would be almost impossible to take with a digital camera. An HDR image reveals details in the light and dark areas of your images.
 
-[caption id="attachment_89" align="aligncenter" width="300" caption="HDR"]<a href="/julien.viet/Bastia_01_01_09#5286332709867698482"><img class="size-medium wp-image-89" title="ciel1" src="/wp-content/uploads/2009/01/ciel1-300x200.jpg" alt="HDR" width="300" height="200" /></a>[/caption]
+<p align="center"><a href="/julien.viet/Bastia_01_01_09#5286332709867698482"><img class="size-medium wp-image-89" title="ciel1" src="/wp-content/uploads/2009/01/ciel1-300x200.jpg" alt="HDR" width="300" height="200" /></a></p>
 
 For instance, on this picture we can see the details in the clouds but also on the rock and it would be very hard to achieve it without HDR.
 
@@ -20,42 +20,46 @@ This tutorial does not explain how to create an HDR image because there are alre
 I will rather focus on explaining how to configure a Nikon D80 to leverage a built in feature called Auto Exposure Bracketing (AEB) that makes easier the creation of HDR images. I found all the relevant informations in the user manual but they were not clear enough and I had to spend some time on it in order to get it effective.
 
 HDR imaging works by combining the same image with different exposures into a single image using an appropriate software. No need to emphasis on the fact that the images should rigorously be the same as possible. It can be done manually by shooting several times the same pictures with different exposure time and keeping the same aperture size, but it has at least two drawbacks:
+
 <ul>
 	<li>you need to physically touch the camera to change the exposure and it could change slightly the different images</li>
 	<li>it take time to reconfigure the camera and your image may change during that time (clouds may move for instance)</li>
 </ul>
+
 The Nikon D80 has a feature called bracketing that allows to shoot three times the same pictures with the same aperture but with different exposures in that order:
+
 <ol>
 	<li>The normal image</li>
 	<li>The underexposed image</li>
 	<li>The overexposed image</li>
 </ol>
+
 Here is my howto for configuring the D80 appropriately:
+
 h3. Configure the image quality
 
-
 The first step is to set the image quality to RAW. You can change it by pressing the QUAL button and rotate the the main command until you get RAW.
+
 h3. Configure the ISO sensitivity
 
-
 Set the ISO sensitivity to the lowest value you can afford, for instance ISO 100 works well most of the time for me.
+
 h3. Configure the focus mode
 
-
 Focus mode should be configured to manual (perhaps it's possible to use automatic but I never tried).
+
 h3. Configure the mode
 
-
 Set the D80 into Aperture-priority mode (A). Exposure bracketing works with that mode.
+
 h3. Configure the bracketing
 
-
 Press the BKT button and rotate the main dial to chose 3 shoots and the sub-command dial to choose the bracketing increment with the value 2.0EV. At this moment you configured the D80 to change the exposure of the photo each time you shoot. Therefore the first picture you take is a normal one, but the second one will be underexposed by 2EV and the third one will be overexposed by 2EV. The forth one will be exposed normally.
+
 h3. Configure the shooting mode
 
-
 The final step is to configure the shooting mode to continuous.
-h3. Et voilà!
 
+h3. Et voilà!
 
 The next time you will take a picture keep the finder pressed and the D80 will take the three shoots for you. Now it's up to you to make great HDR pictures!

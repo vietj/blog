@@ -8,30 +8,26 @@ categories:
 - crash
 ---
 
-released today after a 2 months of work, featuring:
+Released today after a 2 months of work, featuring:
 
 h3. Color and styles
 
-
-
 CRaSH now supports shell color and styles for increasing the readability of your commands, for example:
 
-<a href="/wp-content/uploads/2012/08/crash-01.png"><img class="aligncenter size-full wp-image-343" title="crash-01" src="/wp-content/uploads/2012/08/crash-01.png" alt="" width="500" height="198" /></a>
+<p align="center"><a href="/wp-content/uploads/2012/08/crash-01.png"><img class="aligncenter size-full wp-image-343" title="crash-01" src="/wp-content/uploads/2012/08/crash-01.png" alt="" width="500" height="198" /></a></p>
 
 The same command in CRaSH 1.1 with better color and formatting:
-h3. <a href="/wp-content/uploads/2012/08/crash-11.png"><img class="aligncenter size-full wp-image-344" title="crash-11" src="/wp-content/uploads/2012/08/crash-11.png" alt="" width="500" height="196" /></a>
 
-
+<p align="center"><a href="/wp-content/uploads/2012/08/crash-11.png"><img class="aligncenter size-full wp-image-344" title="crash-11" src="/wp-content/uploads/2012/08/crash-11.png" alt="" width="500" height="196" /></a></p>
 
 h3. Spring support
-
 
 CRaSH can be embedded and configured as a Spring bean providing automatic access to your Spring beans. Writing CRaSH commands that leverage Spring beans is now trivial, now you can extend your Spring applications with CRaSH!
 
 h3. Standalone mode improvements
 
-
 The standalone mode has a few improvements:
+
 <ul>
 	<li>a conf/crash.properties has been added for configuring the shell</li>
 	<li>the SSH connector has been added</li>
@@ -39,9 +35,8 @@ The standalone mode has a few improvements:
 
 h3. Download
 
-
-
 CRaSH can now be fully downloaded and we also provide smaller archives depending on the bundle you like:
+
 <ul>
 	<li><a href="https://code.google.com/p/crsh/downloads/detail?name=crsh-all-1.1.0.tar.gz&can=2&q=">CRaSH All</a> : all the available bundles</li>
 	<li><a href="https://code.google.com/p/crsh/downloads/detail?name=crsh-standalone-1.1.0.tar.gz&can=2&q=">CRaSH Standalone</a> : starts a JVM or attach to it a running JVM</li>
@@ -52,9 +47,6 @@ CRaSH can now be fully downloaded and we also provide smaller archives depending
 
 h3. Finally
 
-
-
 If you want to learn more about those features, they have been explained in this nice screen cast:
 
-<iframe src="http://player.vimeo.com/video/47014671" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-
+<p align="center"><iframe src="http://player.vimeo.com/video/47014671" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></p>

@@ -10,8 +10,6 @@ categories:
 
 CRaSH 1.0.0-beta22 release features an <a href="http://izpack.org/">IZPack</a> installer that will let you configure a CRaSH runtime throughout a serie of screens, here is a short video showing an installation:
 
-<p style="text-align: center;"><iframe src="http://player.vimeo.com/video/27783926?title=0&byline=0&portrait=0" width="400" height="225" frameborder="0"></iframe>
-
-
+<p style="text-align: center;"><iframe src="http://player.vimeo.com/video/27783926?title=0&byline=0&portrait=0" width="400" height="225" frameborder="0"></iframe></p>
 
 You can download them from the usual <a href="http://code.google.com/p/crsh/downloads/list">page</a>.

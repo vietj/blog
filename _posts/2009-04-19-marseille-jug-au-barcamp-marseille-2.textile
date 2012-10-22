@@ -15,6 +15,7 @@ Les évènements orientés nouvelles technologies sont plutot rares sur Marseill
 L'école d'ingénieur <a href="http://www.supinfo.fr/fr/Menu5b51372d-a9e8-4325-bd4c-28a4bdac11a5.aspx">Supinfo Marseille</a> hébergeait le BarCamp pour l'occasion ce qui m'a donné l'occasion de visiter les docks qui ont été rénovés il y a quelques années. J'avais déjà visité un peu les docks et j'ai constaté que l'intérieur des batiments est aussi beau que l'aspect extérieur le laisse penser.
 
 A présent, venons en aux faits! furent présents lors de la réunion:
+
 <ul>
 	<li>Alain Defrance formateur Java à Supinfo</li>
 	<li>Yann Vigara revenu de Paris il y a quelques mois et qui démarre une activité <a href="http://www.hebergement-j2ee.fr/accueil">d'hébergeur Java</a></li>
@@ -22,14 +23,17 @@ A présent, venons en aux faits! furent présents lors de la réunion:
 	<li>Cyril Bourgès étudiant en master SIS de Luminy</li>
 	<li>Moi même</li>
 </ul>
+
 La réunion a d'abord commencé par les cordialités d'usage à savoir la présentation de chacun des participants.
 
 Il faut savoir que notre aventure du Marseille JUG a débuté il y a quelques semaines.  Khaled, Colin, Alain et moi même nous sommes déjà rencontré plusieurs fois avant le BarCamp (malheureusement Khaled et Colin n'ont pas pu participer au meeting BarCamp). Nous avions donc déjà donné une direction au JUG et cela a été l'occasion d'exposer nos décisions. Je rassure tout de même, celles ci sont assez standard et nous n'auront pas une gouvernance basée sur le totalitarisme, en fait la plupart d'entre elles émargent de la lecture de la mailing list des JUG leaders français. Voici donc les points que nous avons discutés:
+
 <ul>
 	<li>Direction collégiale avec des status basés sur la notion de co présidents. Cela nous est apparu comme le mode idéal et a suggéré par un JUG ayant ce mode de gouvernance</li>
 	<li>Volonté de faire une réunion unique avant fin juin 2009 et mise en place d'un calendrier de réunions pour la saison 2009/2010</li>
 	<li>Recherche de partenaires et de sponsors financiers pour aider le JUG</li>
 </ul>
+
 Il apparaît que Supinfo fournira un partenariat afin que le JUG puisse profiter des locaux de l'école. Ceux ci semblent idéaux car modernes et avec une position géographique très avantageante. Nous souhaiterions effectuer une réunion mensuelle du JUG, vraisemblablement le mercredi qui est un jour où nous pourrions utiliser la salle aussi bien l'après midi que le soir (probablement 18h).
 
 Finalement nous avons conclu qu'à présent la prochaine action à effectuer est de s'occuper de tout le travail administratif qui fondera le JUG en tant qu'assocation 1901. Ceci est un mal plus que nécéssaire pour la création du JUG.

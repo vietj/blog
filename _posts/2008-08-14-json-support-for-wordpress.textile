@@ -14,17 +14,18 @@ I use the JSON support in my <a href="http://www.julienviet.com">home page</a>. 
 Anyway here is the php code for WordPress. It is not a plugin because it does not interract with the heart of the system and WordPress does not seem to have an architecture for adding that kind of feature. I believe it should rather be a core feature of the product rather than an extension.
 
 First step, create a file called @wp-json.php@ at the root of WordPress:
-<pre name="code" class="php"><?php
+
+{% highlight php %}<?php
 if (empty($wp)) {
 	require_once('./wp-load.php');
 	wp('feed=json');
 }
-
 require (ABSPATH . WPINC . '/feed-json.php');
+?>{% endhighlight %}
 
-?></pre>
 Then create a file named @feed-json.php@ in the @wp-includes@ folder:
-<pre name="code" class="php"><?php
+
+{% highlight java %}<?php
 header('Content-Type: application/json; charset=' . get_option('blog_charset'), true);
 $more = 1;
 
@@ -47,7 +48,14 @@ $arr = array(
 'item' => $items);
 
 echo "".$HTTP_GET_VARS["callback"]."(".json_encode($arr).");";
-?></pre>
+?>{% endhighlight %}
+
 Then the URL to use it is http://yourdomain/yourpath/wp-json.php?callback=myfunction. The callback is mandatory (if you don't want it, modify the php script above) in order to make the feed mashable directly in a web page. It will return data like:
-<pre name="code" class="javascript">myfunction({"title":"It is what it is","link":"http:\/\/blog.julienviet.com","description":"A pure technical trip","language":"en", ..... });</pre>
+
+{% highlight javascript %}myfunction({
+	"title":"It is what it is",
+	"link":"http:\/\/blog.julienviet.com","description":"A pure technical trip",
+	"language":"en", ...
+});{% endhighlight %}
+
 I'll explain later in another post how I consume it in my <a href="http://www.julienviet.com">home page</a>.

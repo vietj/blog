@@ -8,13 +8,12 @@ categories:
 - OSS
 ---
 
-<div>
+CRaSh <a href="http://code.google.com/p/crsh/downloads/detail?name=crsh-1.0.0-beta9.tar.gz&can=2&q=">1.0.0-beta9</a> minor feature and fix a few issues with GateIn 3.1:
 
-CRaSh <a href="http://code.google.com/p/crsh/downloads/detail?name=crsh-1.0.0-beta9.tar.gz&can=2&q=">1.0.0-beta9</a> minor feature and fix a few issues with GateIn 3.1:
 <ul>
 	<li>export/import uses now the SSH username and password for accessing JCR for GateIn 3.1</li>
 	<li>connect now always require a password for GateIn 3.1</li>
 	<li><a href="http://crsh.googlecode.com/svn/doc/1.0.0-beta9/index.pdf">documentation</a> now has a front cover page</li>
 </ul>
-<div>enjoy!</div>
-</div>
+
+enjoy!

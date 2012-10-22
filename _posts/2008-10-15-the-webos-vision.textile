@@ -13,29 +13,31 @@ h3. The initial vision
 
 When I was a JBoss contributor, we used to name the infrastructure kernel as WebOS, it was Marc Fleury's vision I think. Actually for many years the banner of our source code was:
 
-@/*
+{% highlight java %}/*
 * JBoss, the OpenSource J2EE webOS
 *
 * Distributable under LGPL license.
 * See terms of license at gnu.org.
-*/@
+*/{% endhighlight %}
 
 It may sound a bit marketingish but it is a simple and powerful concept that was pioneered by JBoss in 2000 and followed by a large crowed since then. The fundamental idea is to provide a system for  managing services. That system can be simplified as the equation @WebOS = deployer + registry + controller@ , I won't go farther in the gory details. Today JBoss as rewritten from scratch the system as <a href="http://www.jboss.org/jbossmc/">JBoss Microcontainer</a>, we assume that it is as of today the most complete system and will be for many years.
 
 So JBoss Microcontainer provides a runtime for your services, do you think it is sufficient ? that would surely work out if you would use services the way we used computers 30 years ago (or maybe 40) with a shell as unique user interface.
+
+
 h3. Toward a more complete vision
 
 
 To complete the picture we need an infrastructure to deliver an user interface that is adapted to the web and that's our business at eXo. What we provide can be simplified as @WebOS = deployer + registry + aggregation + identity@.
 
 The deployer takes care of deploying visual components such as portlets or widgets. Both are connected to your service infrastructure but in a different manner. Portlet adapts your existing applications (JSF, Tapestry, Struts, et...) to the portal world. Widgets are more stateless and access services through Rest. Components are registered in the registry. Nothing really fancy here.
-h3. The aggregator and identity are the real value add
 
+h3. The aggregator and identity are the real value add
 
 The aggregator provides rich front end capabilities to deliver the user interface adapted to your needs based on flexible layouts and skinning. the Ajax technology came to the rescue a few years ago and is now naturally involved to improve the end user experience. It comes in two flavors, the classic portal and the WebOS portal (here literally an operating system like OS X or Vista).
 
 The identity part takes care of linking your existing user back-end to the portal. It integrates the profile and the various roles of the user (I am not talking here about the social aspect of the user identity as it is out of scope of this blog, we'll have more announcements about that soon).
-h3. The vision
 
+h3. The vision
 
 The vision we have sketched so far is almost complete. Our WebOS is able to deliver services and applications to your users, but it comes as an empty shell. To make it more sexy it would be nice to have applications to deploy in it. It is also what eXo delivers as professional and powerful application <a href="http://www.exoplatform.com/portal/public/en/product/exosolution">products</a>  that comes bundled with our offering providing a full fledged WebOS solution.

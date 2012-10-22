@@ -18,7 +18,8 @@ An important point was also to not tie the management to JMX. Indeed even if JMX
 So I went on designing the management contract (Java 5 annotations) that are agnostic of the management layer. Of course this is not enough for exposing the management in JMX nor in Rest. So we do have custom JMX annotations that describe how a management interface should be exposed in the JMX registry.
 
 Here is an example of a managed service:
-<pre name="code" class="java">@Managed
+
+{% highlight java %}@Managed
 @NameTemplate({@Property(key = "service", value = "cache"),
 @Property(key = "name", value = "{Name}")})
 @ManagedDescription("The Cache")
@@ -35,13 +36,15 @@ public interface Cache
 
    ...
 
-}</pre>
+}{% endhighlight %}
+
 The @Managed, @ManagedName and @ManagedDescription are the agnostic annotations. The @NameTemplate is an annotation that has only a sense for the JMX layer. The @Managed* annotations really focus on giving a clear and non programmatic description of the management interface.
 
 There a few more features in the framework such an @ManagedBy annotation to specify a delegate for management interface to avoid to clutter the service with management, a ManagementAware interface for programmatically registering new managed object, a management context facility for correctly scoping managed resources (so several instances of the same service can be registered several times with different names in a transparent manner).
 
 Recently I spent time to develop in the kernel layer the plugability for management provider. It is still in the trunk so nothing is really commited yet in GateIn. This plugability allowed my to write the Rest management provider in GateIn. It was also a good way for me to learn a bit more about JAX-RS (many thanks to Stephane that came a few weeks ago at the Mars JUG to talk about Rest and also for helping me a bit tonight :-) ). So I'm still not yet a Rest expert but I have a few bits of management stuff coming to Rest:
-<pre name="code" class="java">@Managed
+
+{% highlight java %}@Managed
 @NameTemplate({@Property(key = "service", value = "cache"),
 @Property(key = "name", value = "{Name}")})
 @ManagedDescription("Exo Cache")
@@ -49,14 +52,6 @@ Recently I spent time to develop in the kernel layer the plugability for managem
 public interface Cache
 {
    ...
-}</pre>
-The @Rest (it's not yet definitive) expose the management interface on the Rest connector. For now I'm only considering JSON in my experiment.
+}{% endhighlight %}
 
-</pre>management returns a list of the managed services annotated with the @Rest annotation,
-aka "resource list"
-/management/{resource} returns the management interface description, for instance in our case
-we have {name:"cache",description:"The Cache",properties:[{name:"Name", description:
-"The cache name"}],methods:[{name:"clearCache",description:"Evict all entries of the
- cache"}]}</pre>
-
-The good news is that we have already plenty of useful management interface in GateIn that were developed a few months ago by our team and all those will be soon available via Rest!!!
+The @Rest (it's not yet definitive) expose the management interface on the Rest connector. For now I'm only considering JSON in my experiment. The good news is that we have already plenty of useful management interface in GateIn that were developed a few months ago by our team and all those will be soon available via Rest!!!

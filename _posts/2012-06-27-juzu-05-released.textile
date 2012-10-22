@@ -9,6 +9,7 @@ categories:
 ---
 
 After a few months of hard work, <a href="https://github.com/juzu/juzu">Juzu</a> 0.5 is released with many improvements:
+
 <ul>
 	<li>First of all, the documentation has been improved with two new chapters in the <a href="http://juzuweb.org/#tutorial">tutorial</a> and a new <a href="http://juzuweb.org/#reference">reference guide</a></li>
 	<li>The plugin architecture has been improved and provides new plugins</li>
@@ -16,27 +17,27 @@ After a few months of hard work, <a href="https://github.com/juzu/juzu">Juzu</a>
 	<li><a href="http://juzuweb.org/#ajax">Ajax plugin</a> for easing the creation of Ajax requests</li>
 	<li>LESS plugin to transform .less stylesheet to .css stylesheet at compile phase</li>
 	<li><a href="http://juzuweb.org/#plugins_portlet">Portlet plugin</a><a> to generate a Portlet class and inject portlet preferences at runtime</a></li>
-<a> </a>
 	<li><a></a><a href="http://juzuweb.org/#templatespi">Templating Service Provider Interface</a> for supporting additional template engines in Juzu such as the integration of the <a href="http://juzuweb.org/#d5e711">Mustache template engine</a></li>
 </ul>
+
 Here are a couple of features we have added to Juzu as screencats:
 
 <div style="text-align: center;">
-<iframe src="http://player.vimeo.com/video/44737191" width="284" height="160" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> p. <a href="http://vimeo.com/44737191">Juzu LESS plugin</a>
-
+<iframe src="http://player.vimeo.com/video/44737191" width="284" height="160" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+<a href="http://vimeo.com/44737191">Juzu LESS plugin</a>
 </div>
 
 <div style="text-align: center;">
-<iframe src="http://player.vimeo.com/video/44722647" width="284" height="160" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> p. <a href="http://vimeo.com/44722647">Juzu application with Eclipse and Maven</a>
-
-
-</div>
+<iframe src="http://player.vimeo.com/video/44722647" width="284" height="160" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+<a href="http://vimeo.com/44722647">Juzu application with Eclipse and Maven</a></div>
 
 We are now going to work on the Juzu 0.6 release focusing on:
+
 <ul>
 	<li>Standalone mode: take Juzu outside of the portal world and create standalone applications</li>
 	<li>Bean validation integration</li>
 </ul>
+
 We will provide milestones for those features as 0.5.x releases so you will be able to use them and give us feedback. If you are interested in following the development of Juzu or want to be involved you can join the <a href="juzu@googlegroups.com">Juzu Google Group</a>.
 
 You can <a href="https://github.com/juzu/juzu/downloads">download Juzu</a> or use it from Maven.

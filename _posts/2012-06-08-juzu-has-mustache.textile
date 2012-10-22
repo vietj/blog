@@ -7,11 +7,12 @@ categories:
 - Uncategorized
 ---
 
-<a href="http://juzuweb.org">Juzu</a> 0.5 will be released soon and will provide many new great features. Among them now the <a href="http://mustache.github.com/mustache.5.html">Mustache</a> templating engine is supported. Mustache is a logic-less templating engine that is language agnostic:
+<a href="http://juzuweb.org">Juzu</a> 0.5 will be released soon and will provide many new great features. Among them now the <a href="http://mustache.github.com/mustache.5.html">Mustache</a> templating engine is supported. Mustache is a logic-less templating engine that is language agnostic:
 
 <script src="https://gist.github.com/2893951.js?file=gistfile1.txt"></script>
 
 It was important for me to support a second templating language and Mustache is a great choice because:
+
 <ul>
 	<li>it demonstrate that Juzu can use different templating engine</li>
 	<li>some people wants logic-less languages and try to avoid code in templates</li>
@@ -22,6 +23,7 @@ It was important for me to support a second templating language and Mustache is 
 </ul>
 
 The integration relies on <a href="https://github.com/spullara/mustache.java">Mustache.java</a>:
+
 <ol>
 	<li>mustaches (that's the name of a mustache file) are also in the "templates" package and ends with ".mustache"</li>
 	<li>mustache are used and declared exactly the same way than .gtmpl templates (i.e @Inject Path("index.mustache") Template</li>

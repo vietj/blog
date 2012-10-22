@@ -11,7 +11,7 @@ categories:
 - Portlet
 ---
 
-We have been working hard to get this release done with a great set of new features!!!
+We have been working hard to get this release done with a great set of new features!!!
 
 First and foremost, I'm very proud of the level support we have now reached for Eclipse. As you may know, Juzu relies much on Annotation Processing Tools (APT) since the beginning to bring exclusive features. Making Juzu work with Eclipse incremental compiler was very challenging because APT simply works differently. Among those features, the type safe template parameters with Eclipse is showed in this screencast
 

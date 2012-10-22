@@ -14,5 +14,6 @@ I'm very glad to announce the availability of standalone version of CRaSH. CRaSH
 And there is more! A few months ago when I was looking at the jvisualvm source code I found the attach API. The attach API allows to plug an agent in an existing and running JVM (that's what jvisualvm uses natively) and I thought it would be a great feature for CRaSH. I quickly got a prototype running but it took a while to make it usable out of the box.
 
 The standalone version comes with the <a href="http://vietj.github.com/crash/">1.0.0-cr2</a> we just released, for this matter I have recorded a screencast to show how easy and powerful CRaSH standalone can be:
+
 <p style="text-align: center;"><object width="284" height="160"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=40290434&server=vimeo.com&show_title=0&show_byline=0&show_portrait=0&color=00adef&fullscreen=1&autoplay=0&loop=0" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=40290434&server=vimeo.com&show_title=0&show_byline=0&show_portrait=0&color=00adef&fullscreen=1&autoplay=0&loop=0" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="284" height="160"></embed></object>
 

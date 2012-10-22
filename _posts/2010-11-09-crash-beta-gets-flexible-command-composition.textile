@@ -21,7 +21,7 @@ The distribution operator (+) is useful with the pipe operator and it allows to 
 
 So after the nice theory, let's see a few examples:
 
-<pre name="code">
+{% highlight bash %}
 // delete all nt:file nodes
 select * from nt:file | rm
 
@@ -30,6 +30,6 @@ select * from nt:file + select * from nt:resource | setperm -i any -a read
 
 // change the mime type and encoding of all nt:resource nodes
 select * from nt:resource | set jcr:mimeType text/html + set jcr:encoding UTF-8
-</pre>
+{% endhighlight %}
 
 In addition of this very nice feature, the war file packaging has been reworked to include less jar than before, those that were already bundled by the server runtime.

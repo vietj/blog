@@ -19,7 +19,8 @@ I'm proud now to work with Bolek that will replace Thomas Heute as GateIn techni
 
 If you are a fan of GateIn, the <a href="http://crsh.googlecode.com/">CRaSH</a> shell is a must have companion for GateIn. CRaSH is a shell that provides a JCR access and allows to do stuff and hack GateIn. Use it at your own risks of course ;-) . Download of the latest beta-21 is <a href="http://code.google.com/p/crsh/downloads/list">here</a>.
 
-Finally it's time of a few words about GateIn <a href="https://github.com/exoplatform/gatein-stuff">stuff</a> that is another GateIn companion I started a few months ago on GitHub. It's something more informal than a real project, it's like a bunch of stuff that could be useful if you're a GateIn user, at least it's useful to me, it contains so far
+Finally it's time of a few words about GateIn <a href="https://github.com/exoplatform/gatein-stuff">stuff</a> that is another GateIn companion I started a few months ago on GitHub. It's something more informal than a real project, it's like a bunch of stuff that could be useful if you're a GateIn user, at least it's useful to me, it contains so far:
+
 <ul>
 	<li>a <a href="https://github.com/exoplatform/gatein-stuff/tree/master/CRaSH">CRaSH</a> folder with command for adding users to GateIn</li>
 	<li style="text-align: left;"><a href="https://github.com/exoplatform/gatein-stuff/tree/master/gen">gen</a> : an XML generator for generating large navigations</li>

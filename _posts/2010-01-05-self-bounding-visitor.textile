@@ -11,7 +11,8 @@ categories:
 I came across the generics self-bounding pattern, thanks to <a href="http://thecodersbreakfast.net/index.php?post/2009/12/17/Des-interfaces-fluides-extensibles-avec-les-Self-Bounded-Generics">Olivier's blog</a> [in french] that uses it to describe fluent extensible interfaces. After a bit of research I found a very interesting <a href="http://www.artima.com/forums/flat.jsp?forum=106&thread=136394">forum thread</a> that was talking about that pattern more in depth, in particular how it is possible to extend the pattern to a couple of classes.
 
 Let's just start with a simple example, a binary tree class:
-<pre name="code" class="java">abstract class Node<E extends Node<E>> {
+
+{% highlight java %}abstract class Node<E extends Node<E>> {
    public E left;
    public E right;
 }
@@ -23,27 +24,36 @@ class BarNode extends FooNode {
 }
 
 class JuuNode extends Node<JuuNode> {
-}</pre>
+}{% endhighlight %}
+
 With that design, we constraint the Node class to be subclasses and have its children to be a subclass of its own subclass, and now we can write:
-<pre name="code" class="java">FooNode root = new FooNode();
+
+{% highlight java %}FooNode root = new FooNode();
 root.left = new FooNode();
-root.right = new BarNode();</pre>
+root.right = new BarNode();{% endhighlight %}
+
 But that is not possible:
-<pre name="code" class="java">FooNode root = new FooNode();
-root.left = new JuuNode();</pre>
+
+{% highlight java %}FooNode root = new FooNode();
+root.left = new JuuNode();{% endhighlight %}
+
 If you have carefully read the forum thread, someone posted an interesting extension of the pattern that uses two classes.
 
 The <a href="http://reflext.googlecode.com/">Reflext framework</a> I started to write a few months ago was using a visitor pattern to visit  a set of types. There are several ways to visit a set of types, one of them is to visit the class hierarchy of super classes and implemented interfaces. There are many ways to implement the visitor pattern, one of them relies on decoupling the visitor from the code (or strategy) that takes care of doing the visit. The main interest is to reuse the visiting strategy many times and avoid the visitor to care about how visit is done, the visitor only cares about the overall strategy.
 
 Based on this assumption, we can define two interfaces named Visitor and VisitorStrategy that will vary together, as it makes sense to use a hierarchy visitor with the hierarchy visitor strategy. Let's start with the base interfaces. We use it a Type object as visited object, in the reflext framework it's a TypeInfo interface that represents a type (which can be either runtime reflection or APT compile time reflection).
-<pre name="code" class="java">interface Visitor<V extends Visitor<V,S>, S extends Strategy<V,S>> {
+
+{% highlight java %}interface Visitor<V extends Visitor<V,S>, S extends Strategy<V,S>> {
   // The interface is empty as the base visitor does not provide an API
-}</pre>
-<pre class="java">interface Strategy<V extends Visitor<V,S>, S extends Strategy<V,S>> {
+}{% endhighlight %}
+
+{% highlight java %}interface Strategy<V extends Visitor<V,S>, S extends Strategy<V,S>> {
   void visit(Type type, V visitor);
-}</pre>
+}{% endhighlight %}
+
 Now we can define the hierarchy visitor and its strategy
-<pre name="code" class="java">interface HierarchyVisitor<T extends HierarchyVisitor<T>> extends
+
+{% highlight java %}interface HierarchyVisitor<T extends HierarchyVisitor<T>> extends
   Visitor<T, HierarchyStrategy<T>> {
 
   // The API for hierarchy visit
@@ -79,10 +89,13 @@ abstract class HierarchyStrategy<T extends HierarchyVisitor<T>> extends
       }
     }
   }
+  
   abstract boolean accept(Type type);
-}</pre>
+}{% endhighlight %}
+
 We can see that the hierarchy visitor and its strategy vary together because they are constrained by design. The last piece missing is the to make vary the strategy (otherwise we would make the visitor and its strategy the same class...). We do it via an enum that provides several strategies
-<pre name="code" class="java">enum HierarchyScope {
+
+{% highlight java %}enum HierarchyScope {
   ALL() {
     public <T extends HierarchyVisitor<T>> HierarchyStrategy<T> get() {
       return new HierarchyStrategy<T>() {
@@ -105,7 +118,8 @@ We can see that the hierarchy visitor and its strategy vary together because the
 
   public abstract <T extends HierarchyVisitor<T>> HierarchyStrategy<T> get();
 
-}</pre>
+}{% endhighlight %}
+
 Et voilà, now we can use safely the visitor. I'm not convinced that is a great piece of software, I'm just sure that it was very fun to write and research. Without the mentioned blogs and my favorite IDE (Intellij IDEA) it would have been nearly impossible to write correctly :-).
 
 Self-bounding generics is a curious beast, it's even called <a href="http://www.acooke.org/cute/ThatRecurs0.html">there</a> "That Recursive Java Generics Thing". Have fun!

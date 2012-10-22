@@ -13,16 +13,18 @@ Recently I had to archive a consequent number of mails into GMail. I don't want 
 I considered several solutions and the simplest I could find is to dedicate one GMail account for that purpose. The only drawback is to have internet access but I'm fine with that. In addition the IMAP support provided by GMail allows to do that without any hacks.
 
 Once my special GMail account was created, I started to use my mail client to copy the messages in dedicated folders in the archive account. It was working fine for a small number of messages like 5000. Some of my mailboxes have way more messages, like 60,000. Above 5000 messsages, it becomes a nightmare for two reasons:
+
 <ul>
 	<li>The mail client synchronizes with the archive account which slows down the whole process.</li>
 	<li>Network failures are more likely to happen and make the whole process very fragile. When you have a network failure you don't know how your mail client will hold the resume.</li>
 </ul>
-<div>I started to look around for solutions but I did not find something that would work out well for me. So I started to create my own solution, that would just do the job. Obviously I used Java as it offers all the low level API and frameworks to build the solution:</div>
-<div>
+
+I started to look around for solutions but I did not find something that would work out well for me. So I started to create my own solution, that would just do the job. Obviously I used Java as it offers all the low level API and frameworks to build the solution:
+
 <ul>
 	<li><a href="http://java.sun.com/products/javamail/">JavaMail</a>: the corner stone</li>
 	<li><a href="http://jcp.org/en/jsr/detail?id=166">JSR 166 Concurrency Utilities</a>, the <a href="http://java.sun.com/j2se/1.5.0/docs/api/java/util/concurrent/CompletionService.html">CompletionService</a> which allows to multithread trivially the system and improve the import throughput</li>
 	<li><a href="http://mstor.sourceforge.net/">Mstor</a> a local store provider for JavaMail: provides a way to read mbox format using the JavaMail API.</li>
 </ul>
-<div>Then I wrote a few classes using the above frameworks to perform the massive import. It turns out to work very well and deals with network failures when it happens. I won't make an open source project because I don't have extra time to invest in that, however if someone is interested in getting the source code, I would give it as it is.</div>
-</div>
+
+Then I wrote a few classes using the above frameworks to perform the massive import. It turns out to work very well and deals with network failures when it happens. I won't make an open source project because I don't have extra time to invest in that, however if someone is interested in getting the source code, I would give it as it is.
