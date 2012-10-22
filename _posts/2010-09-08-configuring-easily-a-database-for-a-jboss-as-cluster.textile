@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Configuring easily a database for a JBoss AS cluster
-permalink: /2010/09/08/configuring-easily-a-database-for-a-jboss-as-cluster/index.html
+permalink: /2010/09/08/configuring-easily-a-database-for-a-jboss-as-cluster/
 post_id: 205
 categories: 
 - Java

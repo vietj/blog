@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Self-bounding Visitor
-permalink: /2010/01/05/self-bounding-visitor/index.html
+permalink: /2010/01/05/self-bounding-visitor/
 post_id: 158
 categories: 
 - Java

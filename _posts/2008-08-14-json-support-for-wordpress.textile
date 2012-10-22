@@ -1,7 +1,7 @@
 ---
 layout: post
 title: JSON support for WordPress
-permalink: /2008/08/14/json-support-for-wordpress/index.html
+permalink: /2008/08/14/json-support-for-wordpress/
 post_id: 13
 categories: 
 - Uncategorized

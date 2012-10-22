@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CRaSH update
-permalink: /2011/04/29/crash-update/index.html
+permalink: /2011/04/29/crash-update/
 post_id: 230
 categories: 
 - Uncategorized

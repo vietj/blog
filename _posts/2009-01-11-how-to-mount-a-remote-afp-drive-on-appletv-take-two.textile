@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to mount a remote AFP drive on AppleTV Take Two
-permalink: /2009/01/11/how-to-mount-a-remote-afp-drive-on-appletv-take-two/index.html
+permalink: /2009/01/11/how-to-mount-a-remote-afp-drive-on-appletv-take-two/
 post_id: 103
 categories: 
 - Hacking

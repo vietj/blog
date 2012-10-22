@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Adobe Air for Ajax Developers review
-permalink: /2008/08/18/adobe-air-review/index.html
+permalink: /2008/08/18/adobe-air-review/
 post_id: 19
 categories: 
 - Air

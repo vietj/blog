@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CRaSH 1.0 CR1
-permalink: /2012/04/04/crash-1_0-cr-1/index.html
+permalink: /2012/04/04/crash-1_0-cr-1/
 post_id: 286
 categories: 
 - Hacking

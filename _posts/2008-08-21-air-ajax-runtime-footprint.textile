@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The footprint of the Air Ajax runtime
-permalink: /2008/08/21/air-ajax-runtime-footprint/index.html
+permalink: /2008/08/21/air-ajax-runtime-footprint/
 post_id: 23
 categories: 
 - Air

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Nikon D80 HDR bracketing tutorial
-permalink: /2009/01/06/nikon-d80-hdr-bracketing-tutorial/index.html
+permalink: /2009/01/06/nikon-d80-hdr-bracketing-tutorial/
 post_id: 92
 categories: 
 - Photo

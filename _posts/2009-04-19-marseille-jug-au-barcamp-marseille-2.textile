@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Marseille JUG au BarCamp Marseille 2!
-permalink: /2009/04/19/marseille-jug-au-barcamp-marseille-2/index.html
+permalink: /2009/04/19/marseille-jug-au-barcamp-marseille-2/
 post_id: 114
 categories: 
 - JUG

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Reflext improves its annotation introspection
-permalink: /2010/06/03/reflext-improves-its-annotation-introspection/index.html
+permalink: /2010/06/03/reflext-improves-its-annotation-introspection/
 post_id: 192
 categories: 
 - Java

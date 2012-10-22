@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Type Safe Enumeration with Java Generics
-permalink: /2009/07/28/type-safe-enumeration-with-java-generics/index.html
+permalink: /2009/07/28/type-safe-enumeration-with-java-generics/
 post_id: 127
 categories: 
 - Uncategorized

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Juzu Web Framework
-permalink: /2011/10/31/juzu-web-framework/index.html
+permalink: /2011/10/31/juzu-web-framework/
 post_id: 258
 categories: 
 - GateIn

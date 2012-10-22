@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Juzu has Mustache!
-permalink: /2012/06/08/juzu-has-mustache/index.html
+permalink: /2012/06/08/juzu-has-mustache/
 post_id: 308
 categories: 
 - Uncategorized

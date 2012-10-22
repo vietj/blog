@@ -1,7 +1,7 @@
 ---
 layout: post
 title: GateIn management
-permalink: /2009/12/30/gatein-management/index.html
+permalink: /2009/12/30/gatein-management/
 post_id: 152
 categories: 
 - GateIn

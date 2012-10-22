@@ -1,7 +1,7 @@
 ---
 layout: post
 title: GateIn 3.2 M1
-permalink: /2011/06/27/gatein-32-m1/index.html
+permalink: /2011/06/27/gatein-32-m1/
 post_id: 245
 categories: 
 - GateIn

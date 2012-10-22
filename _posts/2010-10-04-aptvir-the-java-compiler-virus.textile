@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Aptvir the Java Compiler virus
-permalink: /2010/10/04/aptvir-the-java-compiler-virus/index.html
+permalink: /2010/10/04/aptvir-the-java-compiler-virus/
 post_id: 208
 categories: 
 - Hacking

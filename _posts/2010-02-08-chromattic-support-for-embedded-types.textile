@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chromattic support for embedded types
-permalink: /2010/02/08/chromattic-support-for-embedded-types/index.html
+permalink: /2010/02/08/chromattic-support-for-embedded-types/
 post_id: 176
 categories: 
 - GateIn

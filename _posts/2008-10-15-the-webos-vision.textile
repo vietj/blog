@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The WebOS Vision
-permalink: /2008/10/15/the-webos-vision/index.html
+permalink: /2008/10/15/the-webos-vision/
 post_id: 61
 categories: 
 - Portal

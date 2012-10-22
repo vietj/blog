@@ -1,7 +1,7 @@
 ---
 layout: post
 title: JSON to Java with JDK6
-permalink: /2011/12/26/json-to-java-with-jdk6/index.html
+permalink: /2011/12/26/json-to-java-with-jdk6/
 post_id: 277
 categories: 
 - Java

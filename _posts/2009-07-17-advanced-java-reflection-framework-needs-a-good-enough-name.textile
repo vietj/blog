@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Advanced Java reflection framework needs a (good enough) name
-permalink: /2009/07/17/advanced-java-reflection-framework-needs-a-good-enough-name/index.html
+permalink: /2009/07/17/advanced-java-reflection-framework-needs-a-good-enough-name/
 post_id: 119
 categories: 
 - Java

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Portlet 2.0 @ JavaZone 2008 18th of September
-permalink: /2008/09/08/portlet-20-javazone-2008-18th-of-september/index.html
+permalink: /2008/09/08/portlet-20-javazone-2008-18th-of-september/
 post_id: 47
 categories: 
 - Java

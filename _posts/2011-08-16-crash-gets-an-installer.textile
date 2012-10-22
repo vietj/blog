@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CRaSH gets an installer!
-permalink: /2011/08/16/crash-gets-an-installer/index.html
+permalink: /2011/08/16/crash-gets-an-installer/
 post_id: 249
 categories: 
 - GateIn

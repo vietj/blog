@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Massive mail import in GMail
-permalink: /2008/08/25/massive-mail-import-in-gmail/index.html
+permalink: /2008/08/25/massive-mail-import-in-gmail/
 post_id: 35
 categories: 
 - Java

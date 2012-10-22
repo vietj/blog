@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CRaSH Standalone
-permalink: /2012/04/13/crash-standalone/index.html
+permalink: /2012/04/13/crash-standalone/
 post_id: 288
 categories: 
 - Hacking

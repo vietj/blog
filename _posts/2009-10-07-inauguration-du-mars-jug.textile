@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Inauguration du Mars JUG
-permalink: /2009/10/07/inauguration-du-mars-jug/index.html
+permalink: /2009/10/07/inauguration-du-mars-jug/
 post_id: 138
 categories: 
 - Conference

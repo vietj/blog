@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What's new and cool in Portlet 2.0
-permalink: /2008/09/18/whats-new-and-cool-in-portlet-20/index.html
+permalink: /2008/09/18/whats-new-and-cool-in-portlet-20/
 post_id: 53
 categories: 
 - Java

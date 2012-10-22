@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syntax highligher test
-permalink: /2008/08/13/syntax-highligher-test/index.html
+permalink: /2008/08/13/syntax-highligher-test/
 post_id: 7
 categories: 
 - Uncategorized

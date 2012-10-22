@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The future is so bright...
-permalink: /2008/09/05/the-future-is-so-bright/index.html
+permalink: /2008/09/05/the-future-is-so-bright/
 post_id: 41
 categories: 
 - Uncategorized

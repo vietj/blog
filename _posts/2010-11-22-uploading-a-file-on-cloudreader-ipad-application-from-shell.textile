@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Uploading a file on Cloudreader iPad application from shell
-permalink: /2010/11/22/uploading-a-file-on-cloudreader-ipad-application-from-shell/index.html
+permalink: /2010/11/22/uploading-a-file-on-cloudreader-ipad-application-from-shell/
 post_id: 218
 categories: 
 - Uncategorized

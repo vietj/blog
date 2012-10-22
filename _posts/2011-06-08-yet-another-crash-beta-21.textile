@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Yet another CRaSH beta (21)
-permalink: /2011/06/08/yet-another-crash-beta-21/index.html
+permalink: /2011/06/08/yet-another-crash-beta-21/
 post_id: 243
 categories: 
 - GateIn

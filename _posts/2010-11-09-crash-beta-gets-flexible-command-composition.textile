@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CRaSH beta gets flexible command composition
-permalink: /2010/11/09/crash-beta-gets-flexible-command-composition/index.html
+permalink: /2010/11/09/crash-beta-gets-flexible-command-composition/
 post_id: 214
 categories: 
 - Uncategorized

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CRaSH 1.0.0-beta9 release
-permalink: /2010/07/08/crash-100-beta9-release/index.html
+permalink: /2010/07/08/crash-100-beta9-release/
 post_id: 198
 categories: 
 - GateIn

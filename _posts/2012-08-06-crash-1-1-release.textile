@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CRaSH 1.1 release
-permalink: /2012/08/06/crash-1-1-release/index.html
+permalink: /2012/08/06/crash-1-1-release/
 post_id: 334
 categories: 
 - Java

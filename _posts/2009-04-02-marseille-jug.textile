@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Marseille JUG
-permalink: /2009/04/02/marseille-jug/index.html
+permalink: /2009/04/02/marseille-jug/
 post_id: 110
 categories: 
 - Java

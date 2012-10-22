@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Juzu 0.5 released!
-permalink: /2012/06/27/juzu-05-released/index.html
+permalink: /2012/06/27/juzu-05-released/
 post_id: 313
 categories: 
 - Java

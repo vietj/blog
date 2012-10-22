@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Soir\xC3\xA9e SOA au Riviera JUG le vendredi 10 avril 2009"
-permalink: /2009/04/03/soiree-soa-au-riviera-jug-le-vendredi-10-avril-2009/index.html
+permalink: /2009/04/03/soiree-soa-au-riviera-jug-le-vendredi-10-avril-2009/
 post_id: 112
 categories: 
 - Java

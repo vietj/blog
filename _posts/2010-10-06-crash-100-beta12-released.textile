@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CRaSH 1.0.0-beta12 released
-permalink: /2010/10/06/crash-100-beta12-released/index.html
+permalink: /2010/10/06/crash-100-beta12-released/
 post_id: 212
 categories: 
 - GateIn

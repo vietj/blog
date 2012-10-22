@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syntax highlight support
-permalink: /2008/08/14/syntax-highlight-support/index.html
+permalink: /2008/08/14/syntax-highlight-support/
 post_id: 9
 categories: 
 - Uncategorized
