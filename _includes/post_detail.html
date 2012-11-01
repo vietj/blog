@@ -1,6 +1,14 @@
-<h1 class="entry-title">
-{% if post.title %}
-    <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
-{% endif %}
-</h1>
-<div class="entry-content">{{ content }}</div>
+<div class="page-header">
+  {% if post.title %}
+    <h1><a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a></h1>
+  {% endif %}
+</div>
+
+<div class="row">
+  <div class="span10 offset1">
+    {{ content }}
+    <hr>
+    {% include JB/comments %}
+  </div>
+  
+</div>
